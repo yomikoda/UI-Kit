@@ -40,4 +40,11 @@ Temporary Items
 # Directories potentially created on remote AFP share
 
 # End of https://www.gitignore.io/api/macos,osx
+reated by https://www.gitignore.io/api/sass
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+# End of https://www.gitignore.io/api/sass
 
