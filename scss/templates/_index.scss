@@ -1,0 +1,161 @@
+@import 'components/buttons';
+@import 'components/iosradio';
+@import 'components/numbers';
+@import 'components/townlist';
+@import 'components/inputradios';
+@import 'components/icons';
+@import 'components/messages';
+@import 'components/login';
+@import 'components/avatars';
+@import 'components/upload';
+@import 'components/levels';
+@import 'components/social';
+@import 'components/calendar';
+@import 'components/ariane';
+@import 'components/stats';
+@import 'components/time';
+@import 'components/slider';
+@import 'components/graph';
+
+@import 'components/input';
+@import 'components/towns';
+@import 'components/tags';
+
+@import 'components/titles';
+@import 'components/text';
+@import 'components/bubbles';
+
+body {
+    width: $full;
+    height: $full;
+    background-color: $bluebg;
+    main {
+        width: 1024px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 120px;
+        #logo {
+            width: 190px;
+            height: 35px;
+            margin-bottom: 35px;
+            background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+        }
+        #columns {
+            display: flex;
+            justify-content: space-between;
+            .colpair {
+               
+                height: 980px;
+                width: 49%;
+                display: flex;
+                justify-content: space-between;
+                .col {
+                    width: 232px;
+                    height: auto;
+                    #buttons {
+                        width: $full;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+*{ transition:all ease 1s;}
+@media screen and (max-width: 1023px) {
+    
+    body {
+    width: $full;
+    height: $full;
+    background-color: $bluebg;
+    main {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 120px;
+        #logo {
+            width: 190px;
+            height: 35px;
+            margin:0 auto;
+            margin-bottom: 35px;
+            background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+        }
+        #columns {
+            width:100%;
+            display: block;
+            .colpair {
+                float: none;
+                height: 980px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                &+.colpair{
+                    margin-top:35px;
+                }
+                .col {
+                    width: 232px;
+                    min-width: 232px;
+                    height: auto;
+                    #buttons {
+                        width: $full;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+*{ transition:all ease 1s;}    
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+    
+    body {
+    width: $full;
+    height: $full;
+    background-color: $bluebg;
+    main {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 120px;
+        #logo {
+            width: 190px;
+            height: 35px;
+            
+            background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+            margin:0 auto;
+            margin-bottom: 35px;
+        }
+        #columns {
+            width:100%;
+            height:auto;
+            display: block;
+            .colpair {
+                margin:0 auto;
+                float: none;
+                height:auto;
+                width: 232px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .col {
+                    width: 232px;
+                    min-width: 232px;
+                    height: auto;
+                    #buttons {
+                        width: $full;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+*{ transition:all ease 1s;}    
+}

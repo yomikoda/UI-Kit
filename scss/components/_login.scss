@@ -1,0 +1,32 @@
+#login {
+    margin-bottom: 20px;
+    input {
+        border: none;
+        width: 100%;
+        padding-left: 5%;
+        height: 35px;
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        box-sizing: border-box;
+        &:first-child {
+            border-bottom: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        &:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        &::placeholder,
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder {
+            color: white;
+            opacity: 0.5;
+            font-family: Open-Semibold;
+            font-size: 13px;
+        }
+    }
+}

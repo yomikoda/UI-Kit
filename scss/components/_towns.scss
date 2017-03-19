@@ -1,0 +1,69 @@
+#towns{
+    margin-bottom: 20px;
+    .town{
+        height:40px;
+        width:100%;
+        box-sizing: border-box;
+        border-bottom: 1px solid white;
+        font-family: Open-semibold;
+        color:white;
+        font-size: 13px;
+        &:last-child{
+            border-bottom: none;
+        }
+        &:hover,&:nth-child(5){
+            background-color:rgba(255,255,255,0.25);
+        }
+        p{
+            margin-left: 10px;
+            height:40px;
+            line-height: 40px;
+            float: left;
+        }
+        &:nth-child(3)>p{
+                float: left;
+        }
+        .deletetown{
+            height:40px;
+            width:60px;
+            float: right;
+            background-color:white;
+            color:$bluebg;
+            p{
+                float: right;
+                text-align: center;
+                width:60px;
+                font-family: Open-regular;
+                font-size: 11px;
+            }
+            
+        }
+        p+div{
+            height:40px;
+            width:40px;
+            float: right;
+            cursor: pointer;
+        }
+        .towncheck{
+            background:url(/img/town-icons/town-check.png) no-repeat;
+            background-position: center;
+        }
+        .nextsteptown{
+            background:url(/img/town-icons/town-next.png) no-repeat;
+            background-position: center;
+        }
+        .townnope{
+            background:url(/img/town-icons/town-cross.png) no-repeat;
+            background-position: center;
+        }
+        .towninfo{
+            background:url(/img/town-icons/town-info.png) no-repeat;
+            background-position: center;
+        }
+        .wattown{
+            background:url(/img/town-icons/town-nope.png) no-repeat;
+            background-position: center;
+        }
+        
+    }
+}

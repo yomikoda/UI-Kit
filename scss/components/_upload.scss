@@ -1,0 +1,23 @@
+#upload{
+    height:212px;
+    width:100%;
+    box-sizing: border-box;
+    border:1px dashed white;
+    margin-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    #uploadicon{
+        width:45px;
+        height:34px;
+        background:url(/img/upload.png) center;
+        margin-bottom: 15px;
+        &+p{
+            font-family: OpenBold;
+            color:white;
+            font-size: $basic-font-size;
+        }
+    }
+    
+}

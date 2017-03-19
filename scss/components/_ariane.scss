@@ -1,0 +1,27 @@
+#ariane {
+    margin-bottom: 15px;
+    height: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+        font-family: OpenBold;
+        display: block;
+        color: white;
+        font-size: $basic-font-size;
+        position: relative;
+        width:28%;
+        text-decoration: underline;
+        &:first-child:after,&:nth-child(2):after {
+            content: "";
+            position: absolute;
+            display: block;
+            left:95%;
+            top: 0;
+            width: 10px;
+            height: 15px;
+            background:url(/img/next.png);  
+        }
+    }
+}

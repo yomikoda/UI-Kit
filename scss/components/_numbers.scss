@@ -1,0 +1,27 @@
+#numbers{
+    float:right;
+    width:108px;
+    height:38px;
+    margin-top:15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .number{
+        
+        @include _border();
+        width:26px;
+        height:26px;
+        @include border-radius(26px, 26px);
+        float: left;
+        p{
+            text-align: center;
+            line-height: 25px;
+            font-family: "OpenBold";
+            font-size: $basic-font-size;
+            color:$white;        
+        }
+        &:last-child{
+            width:34px;
+        }
+    }
+}

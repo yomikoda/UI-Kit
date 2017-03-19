@@ -1,0 +1,56 @@
+#social {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    & div {
+        width: 46px;
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid white;
+        border-radius: 5px;
+        &:first-child {
+            background: url(/img/social/behance.png) no-repeat;
+            background-position: center;
+            transition: all ease 1s;
+            &:hover {
+                background: url(/img/social/behance-hover.png) no-repeat;
+                background-position: center;
+                background-color: white;
+                transition: all ease 1s;
+            }
+        }
+        &:nth-child(2) {
+            background: url(/img/social/twitter.png) no-repeat;
+            background-position: center;
+            background-color: white;
+            &:hover {
+                background: url(/img/social/twitter-hover.png) no-repeat;
+                background-position: center;
+                background-color: #00aced;
+                transition: all ease 1s;
+            }
+        }
+        &:nth-child(3) {
+            background: url(/img/social/facebook.png) no-repeat;
+            background-position: center;
+            &:hover {
+                background: url(/img/social/facebook-hover.png) no-repeat;
+                background-position: center;
+                background-color:white;
+                transition: all ease 1s;
+            }
+        }
+        &:last-child {
+            background: url(/img/social/tumblr.png) no-repeat;
+            background-position: center;
+            &:hover {
+                background: url(/img/social/tumblr-hover.png) no-repeat;
+                background-position: center;
+                background-color:white;
+                transition: all ease 1s;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+#bubbles {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 35px;
+    p {
+        background-color: white;
+        color: $bluebg;
+        border-radius: 10px;
+        font-family: Open-semibold;
+        font-size: 13px;
+        clear: both;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    p:first-child,
+    p:first-child+p {
+        float: left;
+    }
+    p:first-child:before,
+    p:first-child+p:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: -9px;
+        bottom: -3px;
+        width: 18px;
+        height: 18px;
+        background: url(/img/message-tail-left.png) no-repeat;
+        background-position: center;
+    }
+    p:nth-child(3):before,
+    p:last-child:before {
+        content: "";
+        position: absolute;
+        display: block;
+        right: -6px;
+        bottom: -4px;
+        width: 18px;
+        height: 18px;
+        background: url(/img/message-tail-right.png) no-repeat;
+        background-position: center;
+    }
+    p:nth-child(3),
+    p:last-child {
+        float: right;
+    }
+    p:first-child {
+        height: 30px;
+        width: 45px;
+        text-align: left;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+    p:nth-child(2) {
+        height: 45px;
+        width: 135px;
+        padding-top: 5px;
+        line-height: 20px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    p:nth-child(3) {
+        height: 30px;
+        width: 150px;
+        line-height: 30px;
+        text-align: center;
+    }
+    p:last-child {
+        height: 45px;
+        width: 135px;
+        line-height: 20px;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+}
