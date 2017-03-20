@@ -107,25 +107,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: white;
   color: #00aced;
   transition: all ease 1s;
+  cursor: pointer;
 }
 
-/* line 16, ../scss/components/_buttons.scss */
+/* line 17, ../scss/components/_buttons.scss */
 #btn-M {
   width: 110px;
   margin-top: 15px;
 }
-/* line 21, ../scss/components/_buttons.scss */
+/* line 22, ../scss/components/_buttons.scss */
 #btn-M + #btn-M {
   float: right;
 }
-/* line 24, ../scss/components/_buttons.scss */
+/* line 25, ../scss/components/_buttons.scss */
 #btn-M + #btn-M {
   background-color: white;
   color: #00aced;
   transition: all ease 1s;
 }
 
-/* line 30, ../scss/components/_buttons.scss */
+/* line 31, ../scss/components/_buttons.scss */
 select {
   box-sizing: border-box;
   font-family: "OpenBold";
@@ -145,26 +146,26 @@ select {
   /* Safari and Chrome */
   background: url(/img/arrow.png) no-repeat 90%;
 }
-/* line 46, ../scss/components/_buttons.scss */
+/* line 47, ../scss/components/_buttons.scss */
 select.clickedselect {
   background-color: #fff;
   color: #00aced;
   background-image: url(/img/arrow-blue.png);
 }
 
-/* line 17, ../scss/components/_iosradio.scss */
+/* line 18, ../scss/components/_iosradio.scss */
 input[type="checkbox"].ios8-switch {
   position: absolute;
   margin: 22px 0 0 16px;
 }
-/* line 21, ../scss/components/_iosradio.scss */
+/* line 22, ../scss/components/_iosradio.scss */
 input[type="checkbox"].ios8-switch + label {
   position: relative;
   padding: 5px 0 0 40px;
   line-height: 2.0em;
   margin-right: 10px;
 }
-/* line 28, ../scss/components/_iosradio.scss */
+/* line 29, ../scss/components/_iosradio.scss */
 input[type="checkbox"].ios8-switch + label:before {
   content: "";
   position: absolute;
@@ -178,10 +179,11 @@ input[type="checkbox"].ios8-switch + label:before {
   border: 1px solid #d9d9d9;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
   background-color: #00aced;
   border: 1px solid white;
 }
-/* line 33, ../scss/components/_iosradio.scss */
+/* line 34, ../scss/components/_iosradio.scss */
 input[type="checkbox"].ios8-switch + label:after {
   content: "";
   position: absolute;
@@ -195,24 +197,25 @@ input[type="checkbox"].ios8-switch + label:after {
   border: 1px solid #d9d9d9;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
   width: 24px;
   height: 24px;
   border: 1px solid white;
 }
-/* line 39, ../scss/components/_iosradio.scss */
+/* line 40, ../scss/components/_iosradio.scss */
 input[type="checkbox"].ios8-switch + label:hover:after {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-/* line 44, ../scss/components/_iosradio.scss */
+/* line 45, ../scss/components/_iosradio.scss */
 input[type="checkbox"].ios8-switch:checked + label:after {
   margin-left: 15px;
 }
-/* line 47, ../scss/components/_iosradio.scss */
+/* line 48, ../scss/components/_iosradio.scss */
 input[type="checkbox"].ios8-switch:checked + label:before {
   background: #40c1f2;
 }
 
-/* line 53, ../scss/components/_iosradio.scss */
+/* line 54, ../scss/components/_iosradio.scss */
 label + input[type="checkbox"] + label {
   right: -5%;
 }
@@ -279,12 +282,13 @@ label + input[type="checkbox"] + label {
   transition: all ease 1s;
   border-bottom: 1px solid white;
   box-sizing: border-box;
+  cursor: pointer;
 }
-/* line 23, ../scss/components/_townlist.scss */
+/* line 24, ../scss/components/_townlist.scss */
 #townslist ul li:last-child {
   border-bottom: none;
 }
-/* line 26, ../scss/components/_townlist.scss */
+/* line 27, ../scss/components/_townlist.scss */
 #townslist ul li:hover, #townslist ul li:nth-child(2) {
   background-color: #5ccaf4;
 }
@@ -693,51 +697,52 @@ label + input[type="checkbox"] + label {
   box-sizing: border-box;
   border: 1px solid white;
   border-radius: 5px;
+  cursor: pointer;
 }
-/* line 13, ../scss/components/_social.scss */
+/* line 14, ../scss/components/_social.scss */
 #social div:first-child {
   background: url(/img/social/behance.png) no-repeat;
   background-position: center;
   transition: all ease 1s;
 }
-/* line 17, ../scss/components/_social.scss */
+/* line 18, ../scss/components/_social.scss */
 #social div:first-child:hover {
   background: url(/img/social/behance-hover.png) no-repeat;
   background-position: center;
   background-color: white;
   transition: all ease 1s;
 }
-/* line 24, ../scss/components/_social.scss */
+/* line 25, ../scss/components/_social.scss */
 #social div:nth-child(2) {
   background: url(/img/social/twitter.png) no-repeat;
   background-position: center;
   background-color: white;
 }
-/* line 28, ../scss/components/_social.scss */
+/* line 29, ../scss/components/_social.scss */
 #social div:nth-child(2):hover {
   background: url(/img/social/twitter-hover.png) no-repeat;
   background-position: center;
   background-color: #00aced;
   transition: all ease 1s;
 }
-/* line 35, ../scss/components/_social.scss */
+/* line 36, ../scss/components/_social.scss */
 #social div:nth-child(3) {
   background: url(/img/social/facebook.png) no-repeat;
   background-position: center;
 }
-/* line 38, ../scss/components/_social.scss */
+/* line 39, ../scss/components/_social.scss */
 #social div:nth-child(3):hover {
   background: url(/img/social/facebook-hover.png) no-repeat;
   background-position: center;
   background-color: white;
   transition: all ease 1s;
 }
-/* line 45, ../scss/components/_social.scss */
+/* line 46, ../scss/components/_social.scss */
 #social div:last-child {
   background: url(/img/social/tumblr.png) no-repeat;
   background-position: center;
 }
-/* line 48, ../scss/components/_social.scss */
+/* line 49, ../scss/components/_social.scss */
 #social div:last-child:hover {
   background: url(/img/social/tumblr-hover.png) no-repeat;
   background-position: center;
@@ -750,6 +755,44 @@ label + input[type="checkbox"] + label {
   height: 295px;
   margin-bottom: 20px;
 }
+/* line 4, ../scss/components/_calendar.scss */
+#calendar input {
+  height: 35px;
+  box-sizing: border-box;
+  width: 105px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  font-family: OpenSans-Bold;
+  padding-left: 10px;
+  position: relative;
+  display: block;
+  float: left;
+}
+/* line 18, ../scss/components/_calendar.scss */
+#calendar input + input {
+  float: right;
+}
+/* line 21, ../scss/components/_calendar.scss */
+#calendar input + input, #calendar input:first-child:focus {
+  background-color: white;
+  color: #00aced;
+}
+/* line 26, ../scss/components/_calendar.scss */
+#calendar input + input:after, #calendar input:first-child:focus:after {
+  height: 40px;
+  width: 20px;
+  content: '';
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  top: 0px;
+  right: 12px;
+  transition: all .2s;
+  background: url(/img/arrow-blue.png) no-repeat;
+  background-position: 10px 13px;
+}
 
 /* line 1, ../scss/components/_ariane.scss */
 #ariane {
@@ -761,7 +804,7 @@ label + input[type="checkbox"] + label {
   justify-content: space-between;
 }
 /* line 8, ../scss/components/_ariane.scss */
-#ariane p {
+#ariane a {
   font-family: OpenBold;
   display: block;
   color: white;
@@ -769,9 +812,10 @@ label + input[type="checkbox"] + label {
   position: relative;
   width: 28%;
   text-decoration: underline;
+  cursor: pointer;
 }
-/* line 16, ../scss/components/_ariane.scss */
-#ariane p:first-child:after, #ariane p:nth-child(2):after {
+/* line 17, ../scss/components/_ariane.scss */
+#ariane a:first-child:after, #ariane a:nth-child(2):after {
   content: "";
   position: absolute;
   display: block;
@@ -780,6 +824,10 @@ label + input[type="checkbox"] + label {
   width: 10px;
   height: 15px;
   background: url(/img/next.png);
+}
+/* line 27, ../scss/components/_ariane.scss */
+#ariane a:last-child {
+  text-decoration: none;
 }
 
 /* line 1, ../scss/components/_stats.scss */
@@ -893,12 +941,25 @@ label + input[type="checkbox"] + label {
 #graph {
   height: 72px;
   width: 100%;
-  display: flex;
 }
-/* line 5, ../scss/components/_graph.scss */
-#graph .bar {
-  width: 11px;
-  height: 100%;
+
+/* line 1, ../scss/components/_audio.scss */
+#audio {
+  height: 100px;
+}
+/* line 3, ../scss/components/_audio.scss */
+#audio #waveform {
+  height: 65px;
+  overflow: hidden;
+}
+/* line 7, ../scss/components/_audio.scss */
+#audio #timewave {
+  margin-top: 15px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Open-semibold;
+  color: white;
+  font-size: 11.5px;
 }
 
 /* line 1, ../scss/components/_input.scss */
@@ -962,27 +1023,28 @@ label + input[type="checkbox"] + label {
   font-family: Open-semibold;
   color: white;
   font-size: 13px;
+  cursor: pointer;
 }
-/* line 11, ../scss/components/_towns.scss */
+/* line 12, ../scss/components/_towns.scss */
 #towns .town:last-child {
   border-bottom: none;
 }
-/* line 14, ../scss/components/_towns.scss */
+/* line 15, ../scss/components/_towns.scss */
 #towns .town:hover, #towns .town:nth-child(5) {
   background-color: rgba(255, 255, 255, 0.25);
 }
-/* line 17, ../scss/components/_towns.scss */
+/* line 18, ../scss/components/_towns.scss */
 #towns .town p {
   margin-left: 10px;
   height: 40px;
   line-height: 40px;
   float: left;
 }
-/* line 23, ../scss/components/_towns.scss */
+/* line 24, ../scss/components/_towns.scss */
 #towns .town:nth-child(3) > p {
   float: left;
 }
-/* line 26, ../scss/components/_towns.scss */
+/* line 27, ../scss/components/_towns.scss */
 #towns .town .deletetown {
   height: 40px;
   width: 60px;
@@ -990,7 +1052,7 @@ label + input[type="checkbox"] + label {
   background-color: white;
   color: #00aced;
 }
-/* line 32, ../scss/components/_towns.scss */
+/* line 33, ../scss/components/_towns.scss */
 #towns .town .deletetown p {
   float: right;
   text-align: center;
@@ -998,34 +1060,34 @@ label + input[type="checkbox"] + label {
   font-family: Open-regular;
   font-size: 11px;
 }
-/* line 41, ../scss/components/_towns.scss */
+/* line 42, ../scss/components/_towns.scss */
 #towns .town p + div {
   height: 40px;
   width: 40px;
   float: right;
   cursor: pointer;
 }
-/* line 47, ../scss/components/_towns.scss */
+/* line 48, ../scss/components/_towns.scss */
 #towns .town .towncheck {
   background: url(/img/town-icons/town-check.png) no-repeat;
   background-position: center;
 }
-/* line 51, ../scss/components/_towns.scss */
+/* line 52, ../scss/components/_towns.scss */
 #towns .town .nextsteptown {
   background: url(/img/town-icons/town-next.png) no-repeat;
   background-position: center;
 }
-/* line 55, ../scss/components/_towns.scss */
+/* line 56, ../scss/components/_towns.scss */
 #towns .town .townnope {
   background: url(/img/town-icons/town-cross.png) no-repeat;
   background-position: center;
 }
-/* line 59, ../scss/components/_towns.scss */
+/* line 60, ../scss/components/_towns.scss */
 #towns .town .towninfo {
   background: url(/img/town-icons/town-info.png) no-repeat;
   background-position: center;
 }
-/* line 63, ../scss/components/_towns.scss */
+/* line 64, ../scss/components/_towns.scss */
 #towns .town .wattown {
   background: url(/img/town-icons/town-nope.png) no-repeat;
   background-position: center;
@@ -1054,12 +1116,13 @@ label + input[type="checkbox"] + label {
   cursor: pointer;
   padding-right: 20px;
   position: relative;
+  transition: all ease 1s;
 }
-/* line 21, ../scss/components/_tags.scss */
+/* line 22, ../scss/components/_tags.scss */
 #tags p:hover, #tags p:last-child {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 25, ../scss/components/_tags.scss */
+/* line 26, ../scss/components/_tags.scss */
 #tags p:after {
   content: "";
   position: absolute;
@@ -1071,6 +1134,161 @@ label + input[type="checkbox"] + label {
   margin-top: -9px;
   background: url(/img/tag-cross.png) no-repeat;
   background-position: center;
+}
+
+/* line 1, ../scss/components/_rangelevels.scss */
+#rangelevels {
+  height: 90px;
+  width: 100%;
+  /* Special styling for WebKit/Blink */
+  /* All the same stuff for Firefox */
+}
+/* line 4, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+/* line 12, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+/* line 15, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+/* line 19, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+/* line 27, ../scss/components/_rangelevels.scss */
+#rangelevels input:first-child {
+  width: 100%;
+}
+/* line 31, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -10px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: none;
+  /* Add cool effects to your sliders! */
+}
+/* line 45, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-moz-range-thumb,
+#rangelevels input[type=range]::-ms-thumb {
+  border: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  background: #ffffff;
+  cursor: pointer;
+}
+/* line 58, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #fff;
+  border-radius: 1.3px;
+  border: none;
+}
+/* line 68, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 72, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #fff;
+  border-radius: 1.3px;
+  border: none;
+}
+/* line 82, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+/* line 91, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+/* line 97, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+/* line 100, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+/* line 106, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+/* line 1, ../scss/components/_tabs.scss */
+#tabs {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* line 5, ../scss/components/_tabs.scss */
+#tabs #tabmenu {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+/* line 10, ../scss/components/_tabs.scss */
+#tabs #tabmenu .tab {
+  float: left;
+  width: 33.3%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-family: OpenSans-Bold;
+  font-size: 13px;
+}
+/* line 20, ../scss/components/_tabs.scss */
+#tabs #tabmenu .tab:nth-child(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-sizing: border-box;
+}
+/* line 27, ../scss/components/_tabs.scss */
+#tabs #tabmenu .tab:hover, #tabs #tabmenu .clicked-tab {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* line 1, ../scss/components/_titles.scss */
@@ -1219,69 +1437,69 @@ label + input[type="checkbox"] + label {
   padding-left: 10px;
 }
 
-/* line 28, ../scss/templates/_index.scss */
+/* line 34, ../scss/templates/_index.scss */
 body {
   width: 100%;
   height: 100%;
   background-color: #00aced;
 }
-/* line 32, ../scss/templates/_index.scss */
+/* line 38, ../scss/templates/_index.scss */
 body main {
   width: 1024px;
   height: auto;
   margin: 0 auto;
   margin-top: 120px;
 }
-/* line 37, ../scss/templates/_index.scss */
+/* line 43, ../scss/templates/_index.scss */
 body main #logo {
   width: 190px;
   height: 35px;
   margin-bottom: 35px;
   background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
 }
-/* line 43, ../scss/templates/_index.scss */
+/* line 49, ../scss/templates/_index.scss */
 body main #columns {
   display: flex;
   justify-content: space-between;
 }
-/* line 46, ../scss/templates/_index.scss */
+/* line 52, ../scss/templates/_index.scss */
 body main #columns .colpair {
   height: 980px;
   width: 49%;
   display: flex;
   justify-content: space-between;
 }
-/* line 52, ../scss/templates/_index.scss */
+/* line 58, ../scss/templates/_index.scss */
 body main #columns .colpair .col {
   width: 232px;
   height: auto;
 }
-/* line 55, ../scss/templates/_index.scss */
+/* line 61, ../scss/templates/_index.scss */
 body main #columns .colpair .col #buttons {
   width: 100%;
   height: 200px;
 }
 
-/* line 64, ../scss/templates/_index.scss */
+/* line 70, ../scss/templates/_index.scss */
 * {
   transition: all ease 1s;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 67, ../scss/templates/_index.scss */
+  /* line 73, ../scss/templates/_index.scss */
   body {
     width: 100%;
     height: 100%;
     background-color: #00aced;
   }
-  /* line 71, ../scss/templates/_index.scss */
+  /* line 77, ../scss/templates/_index.scss */
   body main {
     width: 80%;
     height: auto;
     margin: 0 auto;
     margin-top: 120px;
   }
-  /* line 76, ../scss/templates/_index.scss */
+  /* line 82, ../scss/templates/_index.scss */
   body main #logo {
     width: 190px;
     height: 35px;
@@ -1289,12 +1507,12 @@ body main #columns .colpair .col #buttons {
     margin-bottom: 35px;
     background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
   }
-  /* line 83, ../scss/templates/_index.scss */
+  /* line 89, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     display: block;
   }
-  /* line 86, ../scss/templates/_index.scss */
+  /* line 92, ../scss/templates/_index.scss */
   body main #columns .colpair {
     float: none;
     height: 980px;
@@ -1302,42 +1520,42 @@ body main #columns .colpair .col #buttons {
     display: flex;
     justify-content: space-around;
   }
-  /* line 92, ../scss/templates/_index.scss */
+  /* line 98, ../scss/templates/_index.scss */
   body main #columns .colpair + .colpair {
     margin-top: 35px;
   }
-  /* line 95, ../scss/templates/_index.scss */
+  /* line 101, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 99, ../scss/templates/_index.scss */
+  /* line 105, ../scss/templates/_index.scss */
   body main #columns .colpair .col #buttons {
     width: 100%;
     height: 200px;
   }
 
-  /* line 109, ../scss/templates/_index.scss */
+  /* line 115, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 117, ../scss/templates/_index.scss */
+  /* line 123, ../scss/templates/_index.scss */
   body {
     width: 100%;
     height: 100%;
     background-color: #00aced;
   }
-  /* line 121, ../scss/templates/_index.scss */
+  /* line 127, ../scss/templates/_index.scss */
   body main {
     width: 80%;
     height: auto;
     margin: 0 auto;
     margin-top: 120px;
   }
-  /* line 126, ../scss/templates/_index.scss */
+  /* line 132, ../scss/templates/_index.scss */
   body main #logo {
     width: 190px;
     height: 35px;
@@ -1345,13 +1563,13 @@ body main #columns .colpair .col #buttons {
     margin: 0 auto;
     margin-bottom: 35px;
   }
-  /* line 134, ../scss/templates/_index.scss */
+  /* line 140, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     height: auto;
     display: block;
   }
-  /* line 138, ../scss/templates/_index.scss */
+  /* line 144, ../scss/templates/_index.scss */
   body main #columns .colpair {
     margin: 0 auto;
     float: none;
@@ -1361,19 +1579,19 @@ body main #columns .colpair .col #buttons {
     flex-direction: column;
     justify-content: space-between;
   }
-  /* line 146, ../scss/templates/_index.scss */
+  /* line 152, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 150, ../scss/templates/_index.scss */
+  /* line 156, ../scss/templates/_index.scss */
   body main #columns .colpair .col #buttons {
     width: 100%;
     height: 200px;
   }
 
-  /* line 160, ../scss/templates/_index.scss */
+  /* line 166, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }

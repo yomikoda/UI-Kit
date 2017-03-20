@@ -18,6 +18,7 @@
         cursor: pointer;
         padding-right: 20px;
         position: relative;
+        transition: all ease 1s;
         &:hover,
         &:last-child {
             background-color: rgba(255, 255, 255, 0.2);

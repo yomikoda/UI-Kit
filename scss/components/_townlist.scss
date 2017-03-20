@@ -20,6 +20,7 @@
             transition: $transition;
             border-bottom: 1px solid white;
             box-sizing: border-box;
+            cursor:pointer;
             &:last-child{
                 border-bottom:none;
             }
