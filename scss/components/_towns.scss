@@ -1,7 +1,7 @@
 #towns{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     .town{
-        height:40px;
+        height:35px;
         width:100%;
         box-sizing: border-box;
         border-bottom: 1px solid white;
@@ -17,15 +17,15 @@
         }
         p{
             margin-left: 10px;
-            height:40px;
-            line-height: 40px;
+            height:35px;
+            line-height: 35px;
             float: left;
         }
         &:nth-child(3)>p{
                 float: left;
         }
         .deletetown{
-            height:40px;
+            height:35px;
             width:60px;
             float: right;
             background-color:white;
@@ -40,8 +40,8 @@
             
         }
         p+div{
-            height:40px;
-            width:40px;
+            height:35px;
+            width:35px;
             float: right;
             cursor: pointer;
         }

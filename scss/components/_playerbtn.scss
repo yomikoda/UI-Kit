@@ -1,0 +1,42 @@
+#playerbtns {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    #audiobtns {
+        width:100%;
+        height:40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .btn {
+            height: 40px;
+            width: 40px;
+            box-sizing: border-box;
+            border:1px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            
+        }
+        #playbtn{
+            background:url(/img/playerbtn/play-btn.png) no-repeat center;
+            
+        }
+        #pausebtn{
+            background:url(/img/playerbtn/pause-btn.png) no-repeat center;
+        }
+        #removebtn{
+            background:url(/img/playerbtn/remove-btn.png) no-repeat center;
+        }
+        #infobtn{
+            background:url(/img/playerbtn/info-btn.png) no-repeat center;
+        }
+        #loopbtn{
+            background:url(/img/playerbtn/loop-btn.png) no-repeat center;
+        }
+        #playbtn:hover,#pausebtn:hover,#removebtn:hover,#infobtn:hover,#loopbtn:hover{
+                background-color:rgba(255,255,255,0.2);
+            }
+        
+        
+    }
+}
