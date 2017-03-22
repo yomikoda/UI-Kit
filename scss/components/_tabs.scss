@@ -1,12 +1,13 @@
 #tabs{
-    height:40px;
+    height:75px;
     width:100%;
     margin-bottom: 15px;
     #tabmenu{
         width:100%;
-        height:100%;
+        height:40px;
         border-radius: 5px;
         border:1px solid white;
+        margin-bottom: 15px;
         .tab{
             float: left;
             width:33.3%;
@@ -14,7 +15,7 @@
             line-height: 40px;
             text-align: center;
             color:white;
-            font-family: OpenSans-Bold;
+            font-family: OpenBold;
             font-size: 13px;
             
             &:nth-child(2){
@@ -28,5 +29,30 @@
                 cursor:pointer;
                 background-color:rgba(255,255,255,0.2);
             }
+    }
+    #tabmenu2{
+        height:20px;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        .simpletab{
+            width:24%;
+            box-sizing: border-box;
+            border-bottom: 2px solid white;
+            text-align: center;
+            opacity: 0.5;
+            cursor: pointer;
+            transition:all ease 1s;
+            p{
+                color:white;
+                font-family: OpenBold;
+                font-size: 13px;
+            }
+        }
+        .selectedsimpletab,.simpletab:hover{
+            opacity: 1;
+            
+            transition:all ease 1s;
+        }
     }
 }
