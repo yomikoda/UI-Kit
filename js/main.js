@@ -203,22 +203,123 @@ $(function () {
     function getPosition(el) {
         return el.getBoundingClientRect().left;
     }
-    
+
     function readableDuration(seconds) {
-    sec = Math.floor( seconds );    
-    min = Math.floor( sec / 60 );
-    min = min >= 10 ? min : '0' + min;    
-    sec = Math.floor( sec % 60 );
-    sec = sec >= 10 ? sec : '0' + sec;    
-    return min + ':' + sec;
-}
-    ;
-    
-    
+        sec = Math.floor(seconds);
+        min = Math.floor(sec / 60);
+        min = min >= 10 ? min : '0' + min;
+        sec = Math.floor(sec % 60);
+        sec = sec >= 10 ? sec : '0' + sec;
+        return min + ':' + sec;
+    };
+
+
     $('#trackduration').text(readableDuration(duration));
+
+    /** CIRCLE STATS**/
+    
+
+    var bar00 = new ProgressBar.Circle(container00, {
+        color: 'white',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 6,
+        trailWidth: 6,
+        trailColor: 'rgba(255,255,255,0.2)',
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+            autoStyleContainer: false
+        },
+        from: {
+            color: 'rgba(255,255,255,1)',
+            width: 6
+        },
+        to: {
+            color: 'rgba(255,255,255,1)',
+            width: 6
+        },
+        // Set default step function for all animate calls
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+
+            var value = Math.round(circle.value() * 100);
+            circle.setText(15);
+            console.log(circle);
+        }
+        
+    });
+    
+       var bar01 = new ProgressBar.Circle(container01, {
+        color: 'white',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 6,
+        trailWidth: 6,
+        trailColor: 'rgba(255,255,255,0.2)',
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+            autoStyleContainer: false
+        },
+        from: {
+            color: 'rgba(255,255,255,1)',
+            width: 6
+        },
+        to: {
+            color: 'rgba(255,255,255,1)',
+            width: 6
+        },
+        // Set default step function for all animate calls
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+
+            var value = Math.round(circle.value() * 100);
+            circle.setText(40);
+            console.log(circle);
+        }
+        
+    });
+    
+       var bar02 = new ProgressBar.Circle(container02, {
+        color: 'white',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 6,
+        trailWidth: 6,
+        trailColor: 'rgba(255,255,255,0.2)',
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+            autoStyleContainer: false
+        },
+        from: {
+            color: 'rgba(255,255,255,1)',
+            width: 6
+        },
+        to: {
+            color: 'rgba(255,255,255,1)',
+            width: 6
+        },
+        // Set default step function for all animate calls
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+
+            var value = Math.round(circle.value() * 100);
+            circle.setText(60);
+            console.log(circle);
+        }
+        
+    });
     
     
+   
     
-    
-    
+    bar00.animate(0.15);
+    bar01.animate(0.40);
+    bar02.animate(0.60);
+
 });
