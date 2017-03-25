@@ -946,8 +946,27 @@ label + input[type="checkbox"] + label {
 
 /* line 1, ../scss/components/_graph.scss */
 #graph {
-  height: 72px;
+  height: 90px;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 6, ../scss/components/_graph.scss */
+#graph #chartparent {
+  position: absolute;
+  height: 90px;
+  overflow: hidden;
+  left: -35px;
+  font-family: openbold;
+}
+/* line 11, ../scss/components/_graph.scss */
+#graph #chartparent #chartContainer {
+  height: 100px;
+  width: 282px;
+}
+/* line 16, ../scss/components/_graph.scss */
+#graph #chartparent .canvasjs-chart-credit {
+  display: none;
 }
 
 /* line 1, ../scss/components/_audio.scss */

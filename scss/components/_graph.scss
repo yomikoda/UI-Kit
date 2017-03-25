@@ -1,7 +1,21 @@
 #graph {
-    height:72px;
+    height:90px;
     width:100%;
-    #graphdraw{
-       
+    position: relative;
+    overflow: hidden;
+    #chartparent{
+        position: absolute;
+        height:90px;
+        overflow: hidden;
+        left:-35px;
+    #chartContainer{
+       height:100px;
+        width:282px;
+    }
+    font-family: openbold;
+    .canvasjs-chart-credit{
+        display: none;
+    }
+        
     }
 }

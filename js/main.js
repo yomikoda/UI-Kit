@@ -81,6 +81,68 @@ $(function () {
 
     /** GRAPH **/
 
+    var chart = new CanvasJS.Chart("chartContainer",
+    {  
+         backgroundColor: "transparent",
+        
+        
+        axisY:{
+            labelFontColor:"rgba(255,250,250,0)",
+        interlacedColor: "rgba(255,250,250,0)",
+        tickColor:"rgba(255,250,250,0)",
+            lineColor:"rgba(255,250,250,0)",
+        gridColor: "rgba(255,250,250,0)",
+            
+      }, 
+        dataPointWidth: 10,
+        axisX:{
+            labelFontColor:"rgba(255,250,250,1)",
+            tickColor:"rgba(255,250,250,0)",
+            lineColor:"rgba(255,250,250,0)",
+        },
+      data: [{        
+        type: "stackedColumn100", //or stackedArea100
+        color: "rgba(255,250,250,1)",
+        dataPoints: [
+        { x: 01, y: 10 },
+        { x: 02, y: 30},
+        { x: 03, y: 40 },
+        { x: 04, y: 80 },
+        { x: 05, y: 100 },
+        { x: 06, y: 90 },
+        { x: 07, y: 75 },
+        { x: 08, y: 85 },
+        { x: 09, y: 65},
+        { x: 10, y: 70},
+        { x: 11, y: 20}  
+        ]
+      },{        
+        type: "stackedColumn100", //or stackedArea100
+        color: "rgba(255,255,255,0.2)",
+        dataPoints: [
+          
+        { x: 01, y: 90 },
+        { x: 02, y: 70},
+        { x: 03, y: 60 },
+        { x: 04, y: 20 },
+        { x: 05, y: 0 },
+        { x: 06, y: 10 },
+        { x: 07, y: 25 },
+        { x: 08, y: 15 },
+        { x: 09, y: 35},
+        { x: 10, y: 30},
+        { x: 11, y: 80}    
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+    
+    
+    
+    
+    
     /** RANGE SLIDER **/
 
     /** TABS **/
