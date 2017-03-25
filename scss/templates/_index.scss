@@ -50,6 +50,7 @@ body {
             height: 35px;
             margin-bottom: 35px;
             background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+            background-size: contain;
         }
         #columns {
             display: flex;

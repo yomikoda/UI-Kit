@@ -28,10 +28,10 @@
                 width: 30px;
                 margin: 0 auto;
                 margin-top: 15px;
-                background: url(/img/weather_cloud.png) center no-repeat;
+                background: url(/img/weather_cloud.svg) center no-repeat;
             }
             &:nth-child(3)>.weathericon{
-                    background:url(/img/weather_storm.png) center no-repeat;
+                    background:url(/img/weather_storm.svg) center no-repeat;
                 }
             p {
                 font-family: Openbold;

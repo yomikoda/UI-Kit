@@ -460,31 +460,34 @@ label + input[type="checkbox"] + label {
 }
 /* line 35, ../scss/components/_icons.scss */
 #icons #ratingsystem .heart {
-  background: url(/img/icons/heart-full.png) no-repeat center;
+  background: url(/img/icons/heart-full.svg) no-repeat center;
+  background-size: contain;
 }
-/* line 37, ../scss/components/_icons.scss */
+/* line 38, ../scss/components/_icons.scss */
 #icons #ratingsystem .heart:nth-child(9), #icons #ratingsystem .heart:last-child {
-  background: url(/img/icons/heart-empty.png) no-repeat center;
+  background: url(/img/icons/heart-empty.svg) no-repeat center;
   transition: all ease 1s;
+  background-size: contain;
 }
-/* line 41, ../scss/components/_icons.scss */
+/* line 43, ../scss/components/_icons.scss */
 #icons #ratingsystem .heart:nth-child(9):hover, #icons #ratingsystem .heart:last-child:hover {
-  background: url(/img/icons/heart-full.png) no-repeat center;
+  background: url(/img/icons/heart-full.svg) no-repeat center;
   transition: all ease 1s;
+  background-size: contain;
 }
-/* line 48, ../scss/components/_icons.scss */
+/* line 52, ../scss/components/_icons.scss */
 #icons #ratingsystem .star {
-  background: url(/img/icons/star-full.png) no-repeat center;
+  background: url(/img/icons/star-full.svg) no-repeat center;
   margin-bottom: 8px;
 }
-/* line 51, ../scss/components/_icons.scss */
+/* line 55, ../scss/components/_icons.scss */
 #icons #ratingsystem .star:nth-child(4), #icons #ratingsystem .star:nth-child(5) {
-  background: url(/img/icons/star-empty.png) no-repeat center;
+  background: url(/img/icons/star-empty.svg) no-repeat center;
   transition: all ease 1s;
 }
-/* line 55, ../scss/components/_icons.scss */
+/* line 59, ../scss/components/_icons.scss */
 #icons #ratingsystem .star:nth-child(4):hover, #icons #ratingsystem .star:nth-child(5):hover {
-  background: url(/img/icons/star-full.png) no-repeat center;
+  background: url(/img/icons/star-full.svg) no-repeat center;
   transition: all ease 1s;
 }
 
@@ -591,7 +594,7 @@ label + input[type="checkbox"] + label {
 #avatars .avatar {
   height: 74px;
   width: 74px;
-  background: url(/img/avatar.png) center no-repeat;
+  background: url(/img/avatar.svg) center no-repeat;
   background-size: contain;
 }
 /* line 12, ../scss/components/_avatars.scss */
@@ -626,7 +629,7 @@ label + input[type="checkbox"] + label {
 #upload #uploadicon {
   width: 45px;
   height: 34px;
-  background: url(/img/upload.png) center;
+  background: url(/img/upload.svg) center;
   margin-bottom: 15px;
 }
 /* line 16, ../scss/components/_upload.scss */
@@ -708,50 +711,50 @@ label + input[type="checkbox"] + label {
 }
 /* line 14, ../scss/components/_social.scss */
 #social div:first-child {
-  background: url(/img/social/behance.png) no-repeat;
+  background: url(/img/social/behance.svg) no-repeat;
   background-position: center;
   transition: all ease 1s;
 }
 /* line 18, ../scss/components/_social.scss */
 #social div:first-child:hover {
-  background: url(/img/social/behance-hover.png) no-repeat;
+  background: url(/img/social/behance-hover.svg) no-repeat;
   background-position: center;
   background-color: white;
   transition: all ease 1s;
 }
 /* line 25, ../scss/components/_social.scss */
 #social div:nth-child(2) {
-  background: url(/img/social/twitter.png) no-repeat;
+  background: url(/img/social/twitter.svg) no-repeat;
   background-position: center;
   background-color: white;
 }
 /* line 29, ../scss/components/_social.scss */
 #social div:nth-child(2):hover {
-  background: url(/img/social/twitter-hover.png) no-repeat;
+  background: url(/img/social/twitter-hover.svg) no-repeat;
   background-position: center;
   background-color: #00aced;
   transition: all ease 1s;
 }
 /* line 36, ../scss/components/_social.scss */
 #social div:nth-child(3) {
-  background: url(/img/social/facebook.png) no-repeat;
+  background: url(/img/social/facebook.svg) no-repeat;
   background-position: center;
 }
 /* line 39, ../scss/components/_social.scss */
 #social div:nth-child(3):hover {
-  background: url(/img/social/facebook-hover.png) no-repeat;
+  background: url(/img/social/facebook-hover.svg) no-repeat;
   background-position: center;
   background-color: white;
   transition: all ease 1s;
 }
 /* line 46, ../scss/components/_social.scss */
 #social div:last-child {
-  background: url(/img/social/tumblr.png) no-repeat;
+  background: url(/img/social/tumblr.svg) no-repeat;
   background-position: center;
 }
 /* line 49, ../scss/components/_social.scss */
 #social div:last-child:hover {
-  background: url(/img/social/tumblr-hover.png) no-repeat;
+  background: url(/img/social/tumblr-hover.svg) no-repeat;
   background-position: center;
   background-color: white;
   transition: all ease 1s;
@@ -841,10 +844,9 @@ label + input[type="checkbox"] + label {
 #stats {
   height: 35px;
   width: 90px;
-  margin-bottom: 20px;
   float: left;
 }
-/* line 6, ../scss/components/_stats.scss */
+/* line 5, ../scss/components/_stats.scss */
 #stats div {
   width: 30%;
   padding-left: 20%;
@@ -854,13 +856,13 @@ label + input[type="checkbox"] + label {
   color: white;
   font-size: 11.5px;
 }
-/* line 14, ../scss/components/_stats.scss */
+/* line 13, ../scss/components/_stats.scss */
 #stats div p {
   text-align: center;
   position: relative;
   line-height: 17.5px;
 }
-/* line 19, ../scss/components/_stats.scss */
+/* line 18, ../scss/components/_stats.scss */
 #stats div p:before {
   content: "";
   position: absolute;
@@ -870,37 +872,42 @@ label + input[type="checkbox"] + label {
   width: 15px;
   height: 17.5px;
 }
-/* line 28, ../scss/components/_stats.scss */
+/* line 27, ../scss/components/_stats.scss */
 #stats div:first-child > p:before {
-  background: url(/img/com/comment.png) no-repeat;
+  background: url(/img/com/comment.svg) no-repeat;
   background-position: center;
 }
-/* line 32, ../scss/components/_stats.scss */
+/* line 31, ../scss/components/_stats.scss */
 #stats div:nth-child(2) > p:before {
-  background: url(/img/com/heart.png) no-repeat;
+  background: url(/img/com/heart.svg) no-repeat;
   background-position: center;
 }
-/* line 36, ../scss/components/_stats.scss */
+/* line 35, ../scss/components/_stats.scss */
 #stats div:nth-child(3) > p:before {
-  background: url(/img/com/star.png) no-repeat;
+  background: url(/img/com/star.svg) no-repeat;
   background-position: center;
 }
-/* line 40, ../scss/components/_stats.scss */
+/* line 39, ../scss/components/_stats.scss */
 #stats div:last-child > p:before {
-  background: url(/img/com/infor.png) no-repeat;
+  background: url(/img/com/infor.svg) no-repeat;
   background-position: center;
 }
 
 /* line 1, ../scss/components/_time.scss */
+#timeandstats {
+  margin-bottom: 20px;
+}
+
+/* line 6, ../scss/components/_time.scss */
 #time {
   width: 125px;
   height: 40px;
-  float: right;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  float: right;
 }
-/* line 8, ../scss/components/_time.scss */
+/* line 13, ../scss/components/_time.scss */
 #time p {
   height: 38px;
   width: 38px;
@@ -913,7 +920,7 @@ label + input[type="checkbox"] + label {
   border-radius: 5px;
   position: relative;
 }
-/* line 19, ../scss/components/_time.scss */
+/* line 24, ../scss/components/_time.scss */
 #time p:first-child:after, #time p:nth-child(2):after {
   content: ":";
   position: absolute;
@@ -924,7 +931,7 @@ label + input[type="checkbox"] + label {
   height: 15px;
   font-family: Open-SemiBold;
 }
-/* line 30, ../scss/components/_time.scss */
+/* line 35, ../scss/components/_time.scss */
 #time p:before {
   content: "";
   position: absolute;
@@ -1095,27 +1102,27 @@ label + input[type="checkbox"] + label {
 }
 /* line 48, ../scss/components/_towns.scss */
 #towns .town .towncheck {
-  background: url(/img/town-icons/town-check.png) no-repeat;
+  background: url(/img/town-icons/town-check.svg) no-repeat;
   background-position: center;
 }
 /* line 52, ../scss/components/_towns.scss */
 #towns .town .nextsteptown {
-  background: url(/img/town-icons/town-next.png) no-repeat;
+  background: url(/img/town-icons/town-next.svg) no-repeat;
   background-position: center;
 }
 /* line 56, ../scss/components/_towns.scss */
 #towns .town .townnope {
-  background: url(/img/town-icons/town-cross.png) no-repeat;
+  background: url(/img/town-icons/town-cross.svg) no-repeat;
   background-position: center;
 }
 /* line 60, ../scss/components/_towns.scss */
 #towns .town .towninfo {
-  background: url(/img/town-icons/town-info.png) no-repeat;
+  background: url(/img/town-icons/town-info.svg) no-repeat;
   background-position: center;
 }
 /* line 64, ../scss/components/_towns.scss */
 #towns .town .wattown {
-  background: url(/img/town-icons/town-nope.png) no-repeat;
+  background: url(/img/town-icons/town-nope.svg) no-repeat;
   background-position: center;
 }
 
@@ -1144,23 +1151,23 @@ label + input[type="checkbox"] + label {
 }
 /* line 20, ../scss/components/_playerbtn.scss */
 #playerbtns #audiobtns #playbtn {
-  background: url(/img/playerbtn/play-btn.png) no-repeat center;
+  background: url(/img/playerbtn/play-btn.svg) no-repeat center;
 }
 /* line 24, ../scss/components/_playerbtn.scss */
 #playerbtns #audiobtns #pausebtn {
-  background: url(/img/playerbtn/pause-btn.png) no-repeat center;
+  background: url(/img/playerbtn/pause-btn.svg) no-repeat center;
 }
 /* line 27, ../scss/components/_playerbtn.scss */
 #playerbtns #audiobtns #removebtn {
-  background: url(/img/playerbtn/remove-btn.png) no-repeat center;
+  background: url(/img/playerbtn/remove-btn.svg) no-repeat center;
 }
 /* line 30, ../scss/components/_playerbtn.scss */
 #playerbtns #audiobtns #infobtn {
-  background: url(/img/playerbtn/info-btn.png) no-repeat center;
+  background: url(/img/playerbtn/info-btn.svg) no-repeat center;
 }
 /* line 33, ../scss/components/_playerbtn.scss */
 #playerbtns #audiobtns #loopbtn {
-  background: url(/img/playerbtn/loop-btn.png) no-repeat center;
+  background: url(/img/playerbtn/loop-btn.svg) no-repeat center;
 }
 /* line 36, ../scss/components/_playerbtn.scss */
 #playerbtns #audiobtns #playbtn:hover, #playerbtns #audiobtns #pausebtn:hover, #playerbtns #audiobtns #removebtn:hover, #playerbtns #audiobtns #infobtn:hover, #playerbtns #audiobtns #loopbtn:hover {
@@ -1206,11 +1213,11 @@ label + input[type="checkbox"] + label {
   width: 30px;
   margin: 0 auto;
   margin-top: 15px;
-  background: url(/img/weather_cloud.png) center no-repeat;
+  background: url(/img/weather_cloud.svg) center no-repeat;
 }
 /* line 33, ../scss/components/_weather.scss */
 #weather #weatherforecast .weatherday:nth-child(3) > .weathericon {
-  background: url(/img/weather_storm.png) center no-repeat;
+  background: url(/img/weather_storm.svg) center no-repeat;
 }
 /* line 36, ../scss/components/_weather.scss */
 #weather #weatherforecast .weatherday p {
@@ -1712,56 +1719,57 @@ body main #logo {
   height: 35px;
   margin-bottom: 35px;
   background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+  background-size: contain;
 }
-/* line 54, ../scss/templates/_index.scss */
+/* line 55, ../scss/templates/_index.scss */
 body main #columns {
   display: flex;
   justify-content: space-between;
 }
-/* line 57, ../scss/templates/_index.scss */
+/* line 58, ../scss/templates/_index.scss */
 body main #columns .colpair {
   height: 980px;
   width: 49%;
   display: flex;
   justify-content: space-between;
 }
-/* line 63, ../scss/templates/_index.scss */
+/* line 64, ../scss/templates/_index.scss */
 body main #columns .colpair .col {
   width: 232px;
   height: auto;
 }
-/* line 66, ../scss/templates/_index.scss */
+/* line 67, ../scss/templates/_index.scss */
 body main #columns .colpair .col:last-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 71, ../scss/templates/_index.scss */
+/* line 72, ../scss/templates/_index.scss */
 body main #columns .colpair .col #buttons {
   width: 100%;
   height: 200px;
 }
 
-/* line 80, ../scss/templates/_index.scss */
+/* line 81, ../scss/templates/_index.scss */
 * {
   transition: all ease 1s;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 83, ../scss/templates/_index.scss */
+  /* line 84, ../scss/templates/_index.scss */
   body {
     width: 100%;
     height: 100%;
     background-color: #00aced;
   }
-  /* line 87, ../scss/templates/_index.scss */
+  /* line 88, ../scss/templates/_index.scss */
   body main {
     width: 80%;
     height: auto;
     margin: 0 auto;
     margin-top: 120px;
   }
-  /* line 92, ../scss/templates/_index.scss */
+  /* line 93, ../scss/templates/_index.scss */
   body main #logo {
     width: 190px;
     height: 35px;
@@ -1769,12 +1777,12 @@ body main #columns .colpair .col #buttons {
     margin-bottom: 35px;
     background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
   }
-  /* line 99, ../scss/templates/_index.scss */
+  /* line 100, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     display: block;
   }
-  /* line 102, ../scss/templates/_index.scss */
+  /* line 103, ../scss/templates/_index.scss */
   body main #columns .colpair {
     float: none;
     height: 980px;
@@ -1782,42 +1790,42 @@ body main #columns .colpair .col #buttons {
     display: flex;
     justify-content: space-around;
   }
-  /* line 108, ../scss/templates/_index.scss */
+  /* line 109, ../scss/templates/_index.scss */
   body main #columns .colpair + .colpair {
     margin-top: 35px;
   }
-  /* line 111, ../scss/templates/_index.scss */
+  /* line 112, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 115, ../scss/templates/_index.scss */
+  /* line 116, ../scss/templates/_index.scss */
   body main #columns .colpair .col #buttons {
     width: 100%;
     height: 200px;
   }
 
-  /* line 125, ../scss/templates/_index.scss */
+  /* line 126, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 133, ../scss/templates/_index.scss */
+  /* line 134, ../scss/templates/_index.scss */
   body {
     width: 100%;
     height: 100%;
     background-color: #00aced;
   }
-  /* line 137, ../scss/templates/_index.scss */
+  /* line 138, ../scss/templates/_index.scss */
   body main {
     width: 80%;
     height: auto;
     margin: 0 auto;
     margin-top: 120px;
   }
-  /* line 142, ../scss/templates/_index.scss */
+  /* line 143, ../scss/templates/_index.scss */
   body main #logo {
     width: 190px;
     height: 35px;
@@ -1825,13 +1833,13 @@ body main #columns .colpair .col #buttons {
     margin: 0 auto;
     margin-bottom: 35px;
   }
-  /* line 150, ../scss/templates/_index.scss */
+  /* line 151, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     height: auto;
     display: block;
   }
-  /* line 154, ../scss/templates/_index.scss */
+  /* line 155, ../scss/templates/_index.scss */
   body main #columns .colpair {
     margin: 0 auto;
     float: none;
@@ -1841,19 +1849,19 @@ body main #columns .colpair .col #buttons {
     flex-direction: column;
     justify-content: space-between;
   }
-  /* line 162, ../scss/templates/_index.scss */
+  /* line 163, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 166, ../scss/templates/_index.scss */
+  /* line 167, ../scss/templates/_index.scss */
   body main #columns .colpair .col #buttons {
     width: 100%;
     height: 200px;
   }
 
-  /* line 176, ../scss/templates/_index.scss */
+  /* line 177, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }

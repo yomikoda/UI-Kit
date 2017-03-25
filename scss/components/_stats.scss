@@ -1,7 +1,6 @@
 #stats {
     height: 35px;
     width: 90px;
-    margin-bottom: 20px;
     float: left;
     div {
         width: 30%;
@@ -26,19 +25,19 @@
             height: 17.5px;
         }
         &:first-child>p:before {
-            background: url(/img/com/comment.png) no-repeat;
+            background: url(/img/com/comment.svg) no-repeat;
             background-position: center;
         }
         &:nth-child(2)>p:before {
-            background: url(/img/com/heart.png) no-repeat;
+            background: url(/img/com/heart.svg) no-repeat;
             background-position: center;
         }
         &:nth-child(3)>p:before {
-            background: url(/img/com/star.png) no-repeat;
+            background: url(/img/com/star.svg) no-repeat;
             background-position: center;
         }
         &:last-child>p:before {
-            background: url(/img/com/infor.png) no-repeat;
+            background: url(/img/com/infor.svg) no-repeat;
             background-position: center;
         }
     }

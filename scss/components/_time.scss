@@ -1,10 +1,15 @@
+#timeandstats{
+    
+    margin-bottom: 20px;
+}
+
 #time {
     width: 125px;
     height: 40px;
-    float: right;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    float: right;
     p {
         height: 38px;
         width: 38px;
