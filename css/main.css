@@ -1569,16 +1569,15 @@ label + input[type="checkbox"] + label {
 #text {
   width: 100%;
   height: 145px;
-  margin-bottom: 25px;
 }
-/* line 5, ../scss/components/_text.scss */
+/* line 4, ../scss/components/_text.scss */
 #text p {
   font-family: Open-Regular;
   color: white;
   font-size: 12px;
   line-height: 20px;
 }
-/* line 10, ../scss/components/_text.scss */
+/* line 9, ../scss/components/_text.scss */
 #text p a {
   color: white;
 }
@@ -1587,7 +1586,6 @@ label + input[type="checkbox"] + label {
 #bubbles {
   height: 200px;
   width: 100%;
-  margin-bottom: 35px;
 }
 /* line 5, ../scss/components/_bubbles.scss */
 #bubbles p {
@@ -1670,69 +1668,100 @@ label + input[type="checkbox"] + label {
   padding-left: 10px;
 }
 
-/* line 38, ../scss/templates/_index.scss */
+/* line 1, ../scss/components/_diagram.scss */
+#diagram {
+  display: block;
+  flex: none;
+  height: 130px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 8, ../scss/components/_diagram.scss */
+#diagram #chartparent02 {
+  position: absolute;
+  left: -60px;
+  top: -60px;
+}
+/* line 12, ../scss/components/_diagram.scss */
+#diagram #chartparent02 #chartContainer02 {
+  width: 330px;
+  height: 200px;
+}
+/* line 17, ../scss/components/_diagram.scss */
+#diagram .canvasjs-chart-credit {
+  display: none;
+}
+
+/* line 39, ../scss/templates/_index.scss */
 body {
   width: 100%;
   height: 100%;
   background-color: #00aced;
 }
-/* line 42, ../scss/templates/_index.scss */
+/* line 43, ../scss/templates/_index.scss */
 body main {
   width: 1024px;
   height: auto;
   margin: 0 auto;
   margin-top: 120px;
 }
-/* line 47, ../scss/templates/_index.scss */
+/* line 48, ../scss/templates/_index.scss */
 body main #logo {
   width: 190px;
   height: 35px;
   margin-bottom: 35px;
   background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
 }
-/* line 53, ../scss/templates/_index.scss */
+/* line 54, ../scss/templates/_index.scss */
 body main #columns {
   display: flex;
   justify-content: space-between;
 }
-/* line 56, ../scss/templates/_index.scss */
+/* line 57, ../scss/templates/_index.scss */
 body main #columns .colpair {
   height: 980px;
   width: 49%;
   display: flex;
   justify-content: space-between;
 }
-/* line 62, ../scss/templates/_index.scss */
+/* line 63, ../scss/templates/_index.scss */
 body main #columns .colpair .col {
   width: 232px;
   height: auto;
 }
-/* line 65, ../scss/templates/_index.scss */
+/* line 66, ../scss/templates/_index.scss */
+body main #columns .colpair .col:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 71, ../scss/templates/_index.scss */
 body main #columns .colpair .col #buttons {
   width: 100%;
   height: 200px;
 }
 
-/* line 74, ../scss/templates/_index.scss */
+/* line 80, ../scss/templates/_index.scss */
 * {
   transition: all ease 1s;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 77, ../scss/templates/_index.scss */
+  /* line 83, ../scss/templates/_index.scss */
   body {
     width: 100%;
     height: 100%;
     background-color: #00aced;
   }
-  /* line 81, ../scss/templates/_index.scss */
+  /* line 87, ../scss/templates/_index.scss */
   body main {
     width: 80%;
     height: auto;
     margin: 0 auto;
     margin-top: 120px;
   }
-  /* line 86, ../scss/templates/_index.scss */
+  /* line 92, ../scss/templates/_index.scss */
   body main #logo {
     width: 190px;
     height: 35px;
@@ -1740,12 +1769,12 @@ body main #columns .colpair .col #buttons {
     margin-bottom: 35px;
     background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
   }
-  /* line 93, ../scss/templates/_index.scss */
+  /* line 99, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     display: block;
   }
-  /* line 96, ../scss/templates/_index.scss */
+  /* line 102, ../scss/templates/_index.scss */
   body main #columns .colpair {
     float: none;
     height: 980px;
@@ -1753,42 +1782,42 @@ body main #columns .colpair .col #buttons {
     display: flex;
     justify-content: space-around;
   }
-  /* line 102, ../scss/templates/_index.scss */
+  /* line 108, ../scss/templates/_index.scss */
   body main #columns .colpair + .colpair {
     margin-top: 35px;
   }
-  /* line 105, ../scss/templates/_index.scss */
+  /* line 111, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 109, ../scss/templates/_index.scss */
+  /* line 115, ../scss/templates/_index.scss */
   body main #columns .colpair .col #buttons {
     width: 100%;
     height: 200px;
   }
 
-  /* line 119, ../scss/templates/_index.scss */
+  /* line 125, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 127, ../scss/templates/_index.scss */
+  /* line 133, ../scss/templates/_index.scss */
   body {
     width: 100%;
     height: 100%;
     background-color: #00aced;
   }
-  /* line 131, ../scss/templates/_index.scss */
+  /* line 137, ../scss/templates/_index.scss */
   body main {
     width: 80%;
     height: auto;
     margin: 0 auto;
     margin-top: 120px;
   }
-  /* line 136, ../scss/templates/_index.scss */
+  /* line 142, ../scss/templates/_index.scss */
   body main #logo {
     width: 190px;
     height: 35px;
@@ -1796,13 +1825,13 @@ body main #columns .colpair .col #buttons {
     margin: 0 auto;
     margin-bottom: 35px;
   }
-  /* line 144, ../scss/templates/_index.scss */
+  /* line 150, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     height: auto;
     display: block;
   }
-  /* line 148, ../scss/templates/_index.scss */
+  /* line 154, ../scss/templates/_index.scss */
   body main #columns .colpair {
     margin: 0 auto;
     float: none;
@@ -1812,19 +1841,19 @@ body main #columns .colpair .col #buttons {
     flex-direction: column;
     justify-content: space-between;
   }
-  /* line 156, ../scss/templates/_index.scss */
+  /* line 162, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 160, ../scss/templates/_index.scss */
+  /* line 166, ../scss/templates/_index.scss */
   body main #columns .colpair .col #buttons {
     width: 100%;
     height: 200px;
   }
 
-  /* line 170, ../scss/templates/_index.scss */
+  /* line 176, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }

@@ -34,6 +34,7 @@
 @import 'components/titles';
 @import 'components/text';
 @import 'components/bubbles';
+@import 'components/diagram';
 
 body {
     width: $full;
@@ -62,6 +63,11 @@ body {
                 .col {
                     width: 232px;
                     height: auto;
+                    &:last-child{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
                     #buttons {
                         width: $full;
                         height: 200px;

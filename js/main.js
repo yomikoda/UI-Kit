@@ -308,7 +308,6 @@ $(function () {
 
             var value = Math.round(circle.value() * 100);
             circle.setText(15);
-            console.log(circle);
         }
         
     });
@@ -340,7 +339,6 @@ $(function () {
 
             var value = Math.round(circle.value() * 100);
             circle.setText(40);
-            console.log(circle);
         }
         
     });
@@ -372,7 +370,6 @@ $(function () {
 
             var value = Math.round(circle.value() * 100);
             circle.setText(60);
-            console.log(circle);
         }
         
     });
@@ -383,5 +380,57 @@ $(function () {
     bar00.animate(0.15);
     bar01.animate(0.40);
     bar02.animate(0.60);
+    
+    /** DIAGRAM **/
+    
+    
+    var chart = new CanvasJS.Chart("chartContainer02",
+    {  
+         backgroundColor: "transparent",
+       
+        
+        axisY:{
+            labelFontColor:"rgba(255,250,250,0)",
+        interlacedColor: "rgba(255,250,250,0)",
+        tickColor:"rgba(255,250,250,0)",
+            lineColor:"rgba(255,250,250,0)",
+        gridColor: "rgba(255,250,250,0)",
+            
+      }, 
+        
+        axisX:{
+            valueFormatString: "DDD" ,
+        interval: 1,
+        intervalType: "day",
+            labelFontColor:"rgba(255,250,250,1)",
+            tickColor:"rgba(255,250,250,0)",
+            lineColor:"rgba(255,250,250,0)",
+        },
+      data: [
+      {      color:"rgba(255,250,250,0.2)",
+          markerType:"circle",
+          markerColor:"#00aced",
+          markerBorderColor:"white",
+       markerBorderThickness:2,
+        indexLabelFontColor: "white",
+          markerSize:10,
+          	lineThickness:1,
+          	fillOpacity:1,
+       lineColor: "white",
+        type: "area",
+        dataPoints: [//array
+          { x: new Date(2013, 00, -1), y: 50},
+		{ x: new Date(2013, 00, 0), y: 120},
+        { x: new Date(2013, 00, 1), y: 80},
+        { x: new Date(2013, 00, 2), y: 150 },
+        { x: new Date(2013, 00, 3), y: 100},
+        { x: new Date(2013, 00, 4), y: 200 },
+            { x: new Date(2013, 00, 5), y: 120 }
+        ]
+      }
+      ]
+    });
+    chart.render();
+    
 
 });
