@@ -574,12 +574,16 @@ label + input[type="checkbox"] + label {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 21, ../scss/components/_login.scss */
-#login input::placeholder, #login input::-webkit-input-placeholder, #login input::-moz-placeholder, #login input:-ms-input-placeholder, #login input:-moz-placeholder {
-  color: white;
+/* line 22, ../scss/components/_login.scss */
+#login input::-webkit-input-placeholder, #login input::-moz-placeholder, #login input:-ms-input-placeholder, #login input:-moz-placeholder {
+  color: red;
   opacity: 0.5;
   font-family: Open-Semibold;
   font-size: 13px;
+}
+/* line 31, ../scss/components/_login.scss */
+#login input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* line 1, ../scss/components/_avatars.scss */
@@ -1616,32 +1620,34 @@ label + input[type="checkbox"] + label {
   content: "";
   position: absolute;
   display: block;
-  left: -9px;
-  bottom: -3px;
-  width: 18px;
-  height: 18px;
-  background: url(/img/message-tail-left.png) no-repeat;
+  left: -3px;
+  bottom: -4px;
+  width: 10px;
+  height: 10px;
+  background: url(/img/message-tail-left.svg) no-repeat;
+  background-size: contain;
   background-position: center;
 }
-/* line 31, ../scss/components/_bubbles.scss */
+/* line 32, ../scss/components/_bubbles.scss */
 #bubbles p:nth-child(3):before,
 #bubbles p:last-child:before {
   content: "";
   position: absolute;
   display: block;
-  right: -6px;
+  right: -3px;
   bottom: -4px;
-  width: 18px;
-  height: 18px;
-  background: url(/img/message-tail-right.png) no-repeat;
+  width: 10px;
+  height: 10px;
+  background: url(/img/message-tail-right.svg) no-repeat;
+  background-size: contain;
   background-position: center;
 }
-/* line 43, ../scss/components/_bubbles.scss */
+/* line 45, ../scss/components/_bubbles.scss */
 #bubbles p:nth-child(3),
 #bubbles p:last-child {
   float: right;
 }
-/* line 47, ../scss/components/_bubbles.scss */
+/* line 49, ../scss/components/_bubbles.scss */
 #bubbles p:first-child {
   height: 30px;
   width: 45px;
@@ -1649,7 +1655,7 @@ label + input[type="checkbox"] + label {
   line-height: 30px;
   padding-left: 10px;
 }
-/* line 54, ../scss/components/_bubbles.scss */
+/* line 56, ../scss/components/_bubbles.scss */
 #bubbles p:nth-child(2) {
   height: 45px;
   width: 135px;
@@ -1658,14 +1664,14 @@ label + input[type="checkbox"] + label {
   text-align: left;
   padding-left: 10px;
 }
-/* line 62, ../scss/components/_bubbles.scss */
+/* line 64, ../scss/components/_bubbles.scss */
 #bubbles p:nth-child(3) {
   height: 30px;
   width: 150px;
   line-height: 30px;
   text-align: center;
 }
-/* line 68, ../scss/components/_bubbles.scss */
+/* line 70, ../scss/components/_bubbles.scss */
 #bubbles p:last-child {
   height: 45px;
   width: 135px;

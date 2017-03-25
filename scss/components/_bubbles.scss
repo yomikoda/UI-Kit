@@ -21,11 +21,12 @@
         content: "";
         position: absolute;
         display: block;
-        left: -9px;
-        bottom: -3px;
-        width: 18px;
-        height: 18px;
-        background: url(/img/message-tail-left.png) no-repeat;
+        left:  -3px;
+        bottom: -4px;
+        width: 10px;
+        height: 10px;
+        background: url(/img/message-tail-left.svg) no-repeat;
+         background-size: contain;
         background-position: center;
     }
     p:nth-child(3):before,
@@ -33,11 +34,12 @@
         content: "";
         position: absolute;
         display: block;
-        right: -6px;
+        right: -3px;
         bottom: -4px;
-        width: 18px;
-        height: 18px;
-        background: url(/img/message-tail-right.png) no-repeat;
+        width: 10px;
+        height: 10px;
+        background: url(/img/message-tail-right.svg) no-repeat;
+        background-size: contain;
         background-position: center;
     }
     p:nth-child(3),

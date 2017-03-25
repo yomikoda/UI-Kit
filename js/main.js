@@ -34,6 +34,9 @@ $(function () {
             'transition': 'all ease 1s'
         })
     });
+
+
+
     /**CALENDAR**/
 
 
@@ -43,6 +46,9 @@ $(function () {
 
 
     /**SLIDER**/
+
+
+
     /** SOUNDCLOUNDY THINGY **/
 
     var wavesurfer = WaveSurfer.create({
@@ -81,69 +87,136 @@ $(function () {
 
     /** GRAPH **/
 
-    var chart = new CanvasJS.Chart("chartContainer",
-    {  
-         backgroundColor: "transparent",
-        
-        
-        axisY:{
-            labelFontColor:"rgba(255,250,250,0)",
-        interlacedColor: "rgba(255,250,250,0)",
-        tickColor:"rgba(255,250,250,0)",
-            lineColor:"rgba(255,250,250,0)",
-        gridColor: "rgba(255,250,250,0)",
-            
-      }, 
-        dataPointWidth: 10,
-        axisX:{
-            labelFontColor:"rgba(255,250,250,1)",
-            tickColor:"rgba(255,250,250,0)",
-            lineColor:"rgba(255,250,250,0)",
+    var chart = new CanvasJS.Chart("chartContainer", {
+        backgroundColor: "transparent",
+
+
+        axisY: {
+            labelFontColor: "rgba(255,250,250,0)",
+            interlacedColor: "rgba(255,250,250,0)",
+            tickColor: "rgba(255,250,250,0)",
+            lineColor: "rgba(255,250,250,0)",
+            gridColor: "rgba(255,250,250,0)",
+
         },
-      data: [{        
-        type: "stackedColumn100", //or stackedArea100
-        color: "rgba(255,250,250,1)",
-        dataPoints: [
-        { x: 01, y: 10 },
-        { x: 02, y: 30},
-        { x: 03, y: 40 },
-        { x: 04, y: 80 },
-        { x: 05, y: 100 },
-        { x: 06, y: 90 },
-        { x: 07, y: 75 },
-        { x: 08, y: 85 },
-        { x: 09, y: 65},
-        { x: 10, y: 70},
-        { x: 11, y: 20}  
+        dataPointWidth: 10,
+        axisX: {
+            labelFontColor: "rgba(255,250,250,1)",
+            tickColor: "rgba(255,250,250,0)",
+            lineColor: "rgba(255,250,250,0)",
+        },
+        data: [{
+                type: "stackedColumn100", //or stackedArea100
+                color: "rgba(255,250,250,1)",
+                dataPoints: [
+                    {
+                        x: 01,
+                        y: 10
+                    },
+                    {
+                        x: 02,
+                        y: 30
+                    },
+                    {
+                        x: 03,
+                        y: 40
+                    },
+                    {
+                        x: 04,
+                        y: 80
+                    },
+                    {
+                        x: 05,
+                        y: 100
+                    },
+                    {
+                        x: 06,
+                        y: 90
+                    },
+                    {
+                        x: 07,
+                        y: 75
+                    },
+                    {
+                        x: 08,
+                        y: 85
+                    },
+                    {
+                        x: 09,
+                        y: 65
+                    },
+                    {
+                        x: 10,
+                        y: 70
+                    },
+                    {
+                        x: 11,
+                        y: 20
+                    }
         ]
-      },{        
-        type: "stackedColumn100", //or stackedArea100
-        color: "rgba(255,255,255,0.2)",
-        dataPoints: [
-          
-        { x: 01, y: 90 },
-        { x: 02, y: 70},
-        { x: 03, y: 60 },
-        { x: 04, y: 20 },
-        { x: 05, y: 0 },
-        { x: 06, y: 10 },
-        { x: 07, y: 25 },
-        { x: 08, y: 15 },
-        { x: 09, y: 35},
-        { x: 10, y: 30},
-        { x: 11, y: 80}    
+      }, {
+                type: "stackedColumn100", //or stackedArea100
+                color: "rgba(255,255,255,0.2)",
+                dataPoints: [
+
+                    {
+                        x: 01,
+                        y: 90
+                    },
+                    {
+                        x: 02,
+                        y: 70
+                    },
+                    {
+                        x: 03,
+                        y: 60
+                    },
+                    {
+                        x: 04,
+                        y: 20
+                    },
+                    {
+                        x: 05,
+                        y: 0
+                    },
+                    {
+                        x: 06,
+                        y: 10
+                    },
+                    {
+                        x: 07,
+                        y: 25
+                    },
+                    {
+                        x: 08,
+                        y: 15
+                    },
+                    {
+                        x: 09,
+                        y: 35
+                    },
+                    {
+                        x: 10,
+                        y: 30
+                    },
+                    {
+                        x: 11,
+                        y: 80
+                    }
         ]
       }
       ]
     });
 
     chart.render();
-    
-    
-    
-    
-    
+
+
+
+
+
     /** RANGE SLIDER **/
+
+
 
     /** TABS **/
 
@@ -278,8 +351,15 @@ $(function () {
 
     $('#trackduration').text(readableDuration(duration));
 
+
+
+
+
+
+
+
     /** CIRCLE STATS**/
-    
+
 
     var bar00 = new ProgressBar.Circle(container00, {
         color: 'white',
@@ -309,10 +389,10 @@ $(function () {
             var value = Math.round(circle.value() * 100);
             circle.setText(15);
         }
-        
+
     });
-    
-       var bar01 = new ProgressBar.Circle(container01, {
+
+    var bar01 = new ProgressBar.Circle(container01, {
         color: 'white',
         // This has to be the same size as the maximum width to
         // prevent clipping
@@ -340,10 +420,10 @@ $(function () {
             var value = Math.round(circle.value() * 100);
             circle.setText(40);
         }
-        
+
     });
-    
-       var bar02 = new ProgressBar.Circle(container02, {
+
+    var bar02 = new ProgressBar.Circle(container02, {
         color: 'white',
         // This has to be the same size as the maximum width to
         // prevent clipping
@@ -371,66 +451,87 @@ $(function () {
             var value = Math.round(circle.value() * 100);
             circle.setText(60);
         }
-        
+
     });
-    
-    
-   
-    
+
+
+
+
     bar00.animate(0.15);
     bar01.animate(0.40);
     bar02.animate(0.60);
-    
+
     /** DIAGRAM **/
-    
-    
-    var chart = new CanvasJS.Chart("chartContainer02",
-    {  
-         backgroundColor: "transparent",
-       
-        
-        axisY:{
-            labelFontColor:"rgba(255,250,250,0)",
-        interlacedColor: "rgba(255,250,250,0)",
-        tickColor:"rgba(255,250,250,0)",
-            lineColor:"rgba(255,250,250,0)",
-        gridColor: "rgba(255,250,250,0)",
-            
-      }, 
-        
-        axisX:{
-            valueFormatString: "DDD" ,
-        interval: 1,
-        intervalType: "day",
-            labelFontColor:"rgba(255,250,250,1)",
-            tickColor:"rgba(255,250,250,0)",
-            lineColor:"rgba(255,250,250,0)",
+
+
+    var chart = new CanvasJS.Chart("chartContainer02", {
+        backgroundColor: "transparent",
+
+
+        axisY: {
+            labelFontColor: "rgba(255,250,250,0)",
+            interlacedColor: "rgba(255,250,250,0)",
+            tickColor: "rgba(255,250,250,0)",
+            lineColor: "rgba(255,250,250,0)",
+            gridColor: "rgba(255,250,250,0)",
+
         },
-      data: [
-      {      color:"rgba(255,250,250,0.2)",
-          markerType:"circle",
-          markerColor:"#00aced",
-          markerBorderColor:"white",
-       markerBorderThickness:2,
-        indexLabelFontColor: "white",
-          markerSize:10,
-          	lineThickness:1,
-          	fillOpacity:1,
-       lineColor: "white",
-        type: "area",
-        dataPoints: [//array
-          { x: new Date(2013, 00, -1), y: 50},
-		{ x: new Date(2013, 00, 0), y: 120},
-        { x: new Date(2013, 00, 1), y: 80},
-        { x: new Date(2013, 00, 2), y: 150 },
-        { x: new Date(2013, 00, 3), y: 100},
-        { x: new Date(2013, 00, 4), y: 200 },
-            { x: new Date(2013, 00, 5), y: 120 }
+
+        axisX: {
+            valueFormatString: "DDD",
+            interval: 1,
+            intervalType: "day",
+            labelFontColor: "rgba(255,250,250,1)",
+            tickColor: "rgba(255,250,250,0)",
+            lineColor: "rgba(255,250,250,0)",
+        },
+        data: [
+            {
+                color: "rgba(255,250,250,0.2)",
+                markerType: "circle",
+                markerColor: "#00aced",
+                markerBorderColor: "white",
+                markerBorderThickness: 2,
+                indexLabelFontColor: "white",
+                markerSize: 10,
+                lineThickness: 1,
+                fillOpacity: 1,
+                lineColor: "white",
+                type: "area",
+                dataPoints: [ //array
+                    {
+                        x: new Date(2013, 00, -1),
+                        y: 50
+                    },
+                    {
+                        x: new Date(2013, 00, 0),
+                        y: 120
+                    },
+                    {
+                        x: new Date(2013, 00, 1),
+                        y: 80
+                    },
+                    {
+                        x: new Date(2013, 00, 2),
+                        y: 150
+                    },
+                    {
+                        x: new Date(2013, 00, 3),
+                        y: 100
+                    },
+                    {
+                        x: new Date(2013, 00, 4),
+                        y: 200
+                    },
+                    {
+                        x: new Date(2013, 00, 5),
+                        y: 120
+                    }
         ]
       }
       ]
     });
     chart.render();
-    
+
 
 });

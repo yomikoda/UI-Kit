@@ -18,15 +18,18 @@
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
         }
-        &::placeholder,
+        
         &::-webkit-input-placeholder,
         &::-moz-placeholder,
         &:-ms-input-placeholder,
         &:-moz-placeholder {
-            color: white;
+            color: red;
             opacity: 0.5;
             font-family: Open-Semibold;
             font-size: 13px;
+        }
+        &::placeholder{
+            color:rgba(255,255,255,0.5);
         }
     }
 }
