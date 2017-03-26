@@ -96,6 +96,8 @@ body {
             margin:0 auto;
             margin-bottom: 35px;
             background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+            
+            background-size: contain;
         }
         #columns {
             width:100%;
@@ -145,6 +147,8 @@ body {
             height: 35px;
             
             background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+            
+            background-size: contain;
             margin:0 auto;
             margin-bottom: 35px;
         }

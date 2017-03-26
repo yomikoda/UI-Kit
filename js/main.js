@@ -77,7 +77,7 @@ $(function () {
     // Show clip duration
     wavesurfer.on('ready', function () {
 
-        //        wavesurfer.playPause();
+                wavesurfer.playPause();
 
         $('#timewave').click(function () {
             wavesurfer.playPause();
@@ -215,8 +215,40 @@ $(function () {
 
 
     /** RANGE SLIDER **/
+    $('input[type="range"]:last-child').on("change", function () {
+        
+        var selectedval = this.value,
+            value01 = $(".rangevalues>li:first-child").attr('value'),
+            value02 = $(".rangevalues>li:nth-child(2)").attr('value'),
+            value03 = $(".rangevalues>li:nth-child(3)").attr('value'),
+            value04 = $(".rangevalues>li:nth-child(4)").attr('value'),
+            value05 = $(".rangevalues>li:last-child").attr('value');
+        
+        if (selectedval == value01) {
+                $(".rangevalues>li").removeClass("rangevalue");
+               $(".rangevalues>li:first-child").addClass('rangevalue');
+        }
+        if (selectedval == value02) {
+                $(".rangevalues>li").removeClass("rangevalue");
+               $(".rangevalues>li:nth-child(2)").addClass('rangevalue');
+        }
+        if (selectedval == value03) {
+                $(".rangevalues>li").removeClass("rangevalue");
+               $(".rangevalues>li:nth-child(3)").addClass('rangevalue');
+        }
+        if (selectedval == value04) {
+                $(".rangevalues>li").removeClass("rangevalue");
+               $(".rangevalues>li:nth-child(4)").addClass('rangevalue');
+        }
+        if (selectedval == value05) {
+                $(".rangevalues>li").removeClass("rangevalue");
+               $(".rangevalues>li:last-child").addClass('rangevalue');
+        }
+        
+        // There's probably a better way to do this, but, if it looks stupid and it works, it's not stupid ¯\_(ツ)_/¯ 
+    });
 
-
+ 
 
     /** TABS **/
 

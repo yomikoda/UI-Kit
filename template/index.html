@@ -180,7 +180,26 @@
                         <p>20</p>
                     </section>
                     </section>
-                    <section id="slider"></section>
+                    <section id="slider">
+                        <div id="slides">
+                            <ul>
+                                <li class="slide"></li>
+                                <li class="slide"></li>
+                                <li class="slide"></li>
+                                <li class="slide"></li>
+                                <li class="slide"></li>
+                            </ul>
+                        </div>    
+                        <div id="buttons-slider">
+                            <ul>
+                                <li class="button"></li>
+                                <li class="button"></li>
+                                <li class="button"></li>
+                                <li class="button"></li>
+                                <li class="button"></li>
+                            </ul>
+                        </div>
+                    </section>
                     <section id="audio">
                         <div id="waveform"></div>
                         <div id="timewave"></div>
@@ -289,8 +308,14 @@
                     <section class="col">
                         <section id="rangelevels">
                             <input type="range">
-
-                            <input type="range" min="0" max="5" style="width:100%;" class="rangeSlider">
+                            <ul class="rangevalues">
+                                <li value="1">1</li>
+                                <li value="2">2</li>
+                                <li value="3" class="rangevalue">3</li>
+                                <li value="4">4</li>
+                                <li  value="5">5</li>
+                            </ul>
+                            <input type="range" min="1" max="5" style="width:100%;" class="rangeSlider" >
                         </section>
                         <section id="tabs">
                             <div id="tabmenu">

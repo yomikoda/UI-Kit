@@ -954,6 +954,92 @@ label + input[type="checkbox"] + label {
   height: 190px;
   width: 100%;
 }
+/* line 5, ../scss/components/_slider.scss */
+#slider #slides {
+  height: 175px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+/* line 11, ../scss/components/_slider.scss */
+#slider #slides .slide {
+  height: 160px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid white;
+  position: absolute;
+  background-color: #00aced;
+}
+/* line 30, ../scss/components/_slider.scss */
+#slider #slides .slide:first-child {
+  bottom: 0;
+  z-index: 300;
+  opacity: 1;
+}
+/* line 40, ../scss/components/_slider.scss */
+#slider #slides .slide:nth-child(2) {
+  bottom: 3px;
+  width: 95%;
+  left: 50%;
+  margin-left: -47.5%;
+  z-index: 250;
+  opacity: 0.8;
+}
+/* line 48, ../scss/components/_slider.scss */
+#slider #slides .slide:nth-child(3) {
+  bottom: 6px;
+  width: 90%;
+  left: 50%;
+  margin-left: -45%;
+  z-index: 200;
+  opacity: 0.6;
+}
+/* line 56, ../scss/components/_slider.scss */
+#slider #slides .slide:nth-child(4) {
+  bottom: 9px;
+  width: 85%;
+  left: 50%;
+  margin-left: -42.5%;
+  z-index: 150;
+  opacity: 0.4;
+}
+/* line 64, ../scss/components/_slider.scss */
+#slider #slides .slide:last-child {
+  bottom: 12px;
+  width: 80%;
+  left: 50%;
+  margin-left: -40%;
+  opacity: 0.2;
+  z-index: 100;
+}
+/* line 74, ../scss/components/_slider.scss */
+#slider #buttons-slider {
+  width: 50px;
+  height: 4px;
+  margin: 0 auto;
+}
+/* line 78, ../scss/components/_slider.scss */
+#slider #buttons-slider ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 82, ../scss/components/_slider.scss */
+#slider #buttons-slider ul .button {
+  box-sizing: border-box;
+  height: 4px;
+  width: 4px;
+  border: 1px solid white;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all ease 1s;
+}
+/* line 90, ../scss/components/_slider.scss */
+#slider #buttons-slider ul .button:hover {
+  background-color: white;
+  transition: all ease 1s;
+}
 
 /* line 1, ../scss/components/_graph.scss */
 #graph {
@@ -1293,119 +1379,110 @@ label + input[type="checkbox"] + label {
 #rangelevels {
   height: 90px;
   width: 100%;
-  /* Special styling for WebKit/Blink */
-  /* All the same stuff for Firefox */
 }
 /* line 4, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range] {
   -webkit-appearance: none;
-  /* Hides the slider so that custom slider can be made */
   width: 100%;
-  /* Specific width is required for Firefox. */
-  background: transparent;
-  /* Otherwise white in Chrome */
 }
-/* line 12, ../scss/components/_rangelevels.scss */
-#rangelevels input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+/* line 7, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]:first-child {
+  margin-bottom: 20px;
 }
-/* line 15, ../scss/components/_rangelevels.scss */
+/* line 11, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range]:focus {
   outline: none;
-  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
 }
-/* line 19, ../scss/components/_rangelevels.scss */
-#rangelevels input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  /* Hides the slider so custom styles can be added */
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-/* line 27, ../scss/components/_rangelevels.scss */
-#rangelevels input:first-child {
-  width: 100%;
-}
-/* line 31, ../scss/components/_rangelevels.scss */
-#rangelevels input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: none;
-  height: 20px;
-  width: 20px;
-  border-radius: 15px;
-  background: #ffffff;
-  cursor: pointer;
-  margin-top: -10px;
-  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: none;
-  /* Add cool effects to your sliders! */
-}
-/* line 45, ../scss/components/_rangelevels.scss */
-#rangelevels input[type=range]::-moz-range-thumb,
-#rangelevels input[type=range]::-ms-thumb {
-  border: none;
-  height: 25px;
-  width: 25px;
-  border-radius: 15px;
-  background: #ffffff;
-  cursor: pointer;
-}
-/* line 58, ../scss/components/_rangelevels.scss */
+/* line 14, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  box-shadow: none;
-  background: #fff;
-  border-radius: 1.3px;
-  border: none;
+  animate: 0.2s;
+  background: white;
 }
-/* line 68, ../scss/components/_rangelevels.scss */
+/* line 21, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-webkit-slider-thumb {
+  height: 25px;
+  width: 25px;
+  border-radius: 13px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12.5px;
+}
+/* line 31, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range]:focus::-webkit-slider-runnable-track {
   background: rgba(255, 255, 255, 0.5);
 }
-/* line 72, ../scss/components/_rangelevels.scss */
+/* line 34, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range]::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  box-shadow: none;
-  background: #fff;
-  border-radius: 1.3px;
-  border: none;
+  animate: 0.2s;
+  background: white;
 }
-/* line 82, ../scss/components/_rangelevels.scss */
+/* line 41, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-moz-range-thumb {
+  height: 25px;
+  width: 25px;
+  border-radius: 12.5px;
+  background: white;
+  cursor: pointer;
+}
+/* line 48, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range]::-ms-track {
   width: 100%;
-  height: 8.4px;
+  height: 2px;
   cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
+  animate: 0.2s;
+  background: white;
 }
-/* line 91, ../scss/components/_rangelevels.scss */
+/* line 55, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range]::-ms-fill-lower {
-  background: #2a6495;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(255, 255, 255, 0.5);
 }
-/* line 97, ../scss/components/_rangelevels.scss */
-#rangelevels input[type=range]:focus::-ms-fill-lower {
-  background: #3071a9;
-}
-/* line 100, ../scss/components/_rangelevels.scss */
+/* line 58, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range]::-ms-fill-upper {
-  background: #3071a9;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(255, 255, 255, 0.5);
 }
-/* line 106, ../scss/components/_rangelevels.scss */
+/* line 61, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]::-ms-thumb {
+  height: 25px;
+  width: 25px;
+  border-radius: 13px;
+  background: white;
+  cursor: pointer;
+  margin-top: -12.5px;
+}
+/* line 69, ../scss/components/_rangelevels.scss */
+#rangelevels input[type=range]:focus::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 72, ../scss/components/_rangelevels.scss */
 #rangelevels input[type=range]:focus::-ms-fill-upper {
-  background: #367ebd;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 75, ../scss/components/_rangelevels.scss */
+#rangelevels ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Openbold;
+  font-size: 13px;
+  color: white;
+}
+/* line 82, ../scss/components/_rangelevels.scss */
+#rangelevels ul li {
+  width: 15px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+/* line 88, ../scss/components/_rangelevels.scss */
+#rangelevels ul .rangevalue {
+  opacity: 1;
 }
 
 /* line 1, ../scss/components/_tabs.scss */
@@ -1782,13 +1859,14 @@ body main #columns .colpair .col #buttons {
     margin: 0 auto;
     margin-bottom: 35px;
     background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+    background-size: contain;
   }
-  /* line 100, ../scss/templates/_index.scss */
+  /* line 102, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     display: block;
   }
-  /* line 103, ../scss/templates/_index.scss */
+  /* line 105, ../scss/templates/_index.scss */
   body main #columns .colpair {
     float: none;
     height: 980px;
@@ -1796,56 +1874,57 @@ body main #columns .colpair .col #buttons {
     display: flex;
     justify-content: space-around;
   }
-  /* line 109, ../scss/templates/_index.scss */
+  /* line 111, ../scss/templates/_index.scss */
   body main #columns .colpair + .colpair {
     margin-top: 35px;
   }
-  /* line 112, ../scss/templates/_index.scss */
+  /* line 114, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 116, ../scss/templates/_index.scss */
+  /* line 118, ../scss/templates/_index.scss */
   body main #columns .colpair .col #buttons {
     width: 100%;
     height: 200px;
   }
 
-  /* line 126, ../scss/templates/_index.scss */
+  /* line 128, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 134, ../scss/templates/_index.scss */
+  /* line 136, ../scss/templates/_index.scss */
   body {
     width: 100%;
     height: 100%;
     background-color: #00aced;
   }
-  /* line 138, ../scss/templates/_index.scss */
+  /* line 140, ../scss/templates/_index.scss */
   body main {
     width: 80%;
     height: auto;
     margin: 0 auto;
     margin-top: 120px;
   }
-  /* line 143, ../scss/templates/_index.scss */
+  /* line 145, ../scss/templates/_index.scss */
   body main #logo {
     width: 190px;
     height: 35px;
     background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
+    background-size: contain;
     margin: 0 auto;
     margin-bottom: 35px;
   }
-  /* line 151, ../scss/templates/_index.scss */
+  /* line 155, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     height: auto;
     display: block;
   }
-  /* line 155, ../scss/templates/_index.scss */
+  /* line 159, ../scss/templates/_index.scss */
   body main #columns .colpair {
     margin: 0 auto;
     float: none;
@@ -1855,19 +1934,19 @@ body main #columns .colpair .col #buttons {
     flex-direction: column;
     justify-content: space-between;
   }
-  /* line 163, ../scss/templates/_index.scss */
+  /* line 167, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 167, ../scss/templates/_index.scss */
+  /* line 171, ../scss/templates/_index.scss */
   body main #columns .colpair .col #buttons {
     width: 100%;
     height: 200px;
   }
 
-  /* line 177, ../scss/templates/_index.scss */
+  /* line 181, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }
