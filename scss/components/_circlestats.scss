@@ -1,6 +1,6 @@
 #circlestats {
     height: 75px;
-    width: 100%;
+    width: $full;
     display: flex;
     justify-content: space-between;
    
@@ -11,7 +11,7 @@
         height: 70px;
         position: relative;
         
-        font-family: Openbold;
+        font-family: "Openbold";
         font-size:18px;
     }
 }

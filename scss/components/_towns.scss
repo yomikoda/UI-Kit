@@ -2,12 +2,12 @@
     margin-bottom: 15px;
     .town{
         height:35px;
-        width:100%;
+        width:$full;
         box-sizing: border-box;
         border-bottom: 1px solid white;
         font-family: Open-semibold;
         color:white;
-        font-size: 13px;
+        font-size:$basic-font-size;
         cursor:pointer;
         &:last-child{
             border-bottom: none;

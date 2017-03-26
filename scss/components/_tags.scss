@@ -1,8 +1,8 @@
 #tags {
     height: 120px;
-    width: 100%;
+    width: $full;
     box-sizing: border-box;
-    border: 1px solid white;
+    @include _border();
     border-radius: 5px;
     margin-bottom: 30px;
     p {
@@ -10,16 +10,16 @@
         display: block;
         font-family: Open-semibold;
         color: white;
-        font-size: 13px;
+        font-size:$basic-font-size;
         padding: 5px;
         margin: 7px;
         box-sizing: border-box;
-        border: 1px solid white;
+        @include _border();
         border-radius: 5px;
         cursor: pointer;
         padding-right: 20px;
         position: relative;
-        transition: all ease 1s;
+        @include _transition();
         &:hover,
         &:last-child {
             background-color: rgba(255, 255, 255, 0.2);
@@ -29,7 +29,7 @@
             position: absolute;
             display: block;
             right:0;
-            top: 50%;
+            top: $mid;
             width: 18px;
             height: 18px;
             margin-top:-9px;

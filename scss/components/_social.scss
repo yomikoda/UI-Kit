@@ -1,25 +1,25 @@
 #social {
     height: 40px;
-    width: 100%;
+    width: $full;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
     & div {
         width: 46px;
-        height: 100%;
+        height: $full;
         box-sizing: border-box;
-        border: 1px solid white;
+        @include _border();
         border-radius: 5px;
         cursor:pointer;
         &:first-child {
             background: url(/img/social/behance.svg) no-repeat;
             background-position: center;
-            transition: all ease 1s;
+            @include _transition();
             &:hover {
                 background: url(/img/social/behance-hover.svg) no-repeat;
                 background-position: center;
                 background-color: white;
-                transition: all ease 1s;
+                @include _transition();
             }
         }
         &:nth-child(2) {
@@ -30,7 +30,7 @@
                 background: url(/img/social/twitter-hover.svg) no-repeat;
                 background-position: center;
                 background-color: #00aced;
-                transition: all ease 1s;
+                @include _transition();
             }
         }
         &:nth-child(3) {
@@ -40,7 +40,7 @@
                 background: url(/img/social/facebook-hover.svg) no-repeat;
                 background-position: center;
                 background-color:white;
-                transition: all ease 1s;
+                @include _transition();
             }
         }
         &:last-child {
@@ -50,7 +50,7 @@
                 background: url(/img/social/tumblr-hover.svg) no-repeat;
                 background-position: center;
                 background-color:white;
-                transition: all ease 1s;
+                @include _transition();
             }
         }
     }

@@ -7,7 +7,7 @@
         width: 105px;
         background-color: transparent;
         border-radius: 5px;
-        border: 1px solid white;
+        @include _border();
         color: white;
         font-family: OpenSans-Bold;
         padding-left: 10px;

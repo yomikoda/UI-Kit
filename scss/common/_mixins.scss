@@ -5,8 +5,14 @@
     border:1px solid white;
 }
 
+@mixin _transition(){
+    transition: all ease 1s;
+}
+
 @mixin _btn_hover(){
     background-color:white;
     color:$bluebg;
-    transition: $transition;
+    @include _transition();
 }
+
+

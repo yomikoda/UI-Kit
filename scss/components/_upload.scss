@@ -1,6 +1,6 @@
 #upload{
     height:212px;
-    width:100%;
+    width:$full;
     box-sizing: border-box;
     border:1px dashed white;
     margin-bottom: 125px;
@@ -14,7 +14,7 @@
         background:url(/img/upload.svg) center;
         margin-bottom: 15px;
         &+p{
-            font-family: OpenBold;
+            font-family: "Openbold";
             color:white;
             font-size: $basic-font-size;
         }

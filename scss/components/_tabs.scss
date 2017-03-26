@@ -1,12 +1,12 @@
 #tabs{
     height:75px;
-    width:100%;
+    width:$full;
     margin-bottom: 15px;
     #tabmenu{
-        width:100%;
+        width:$full;
         height:40px;
         border-radius: 5px;
-        border:1px solid white;
+        @include _border();
         margin-bottom: 15px;
         .tab{
             float: left;
@@ -15,8 +15,8 @@
             line-height: 40px;
             text-align: center;
             color:white;
-            font-family: OpenBold;
-            font-size: 13px;
+            font-family: "Openbold";
+            font-size:$basic-font-size;
             
             &:nth-child(2){
                 border-left:1px solid white;
@@ -27,12 +27,12 @@
         
             .tab:hover,.clicked-tab{
                 cursor:pointer;
-                background-color:rgba(255,255,255,0.2);
+                background-color:$quart-white
             }
     }
     #tabmenu2{
         height:20px;
-        width:100%;
+        width:$full;
         display: flex;
         justify-content: space-between;
         .simpletab{
@@ -42,17 +42,17 @@
             text-align: center;
             opacity: 0.5;
             cursor: pointer;
-            transition:all ease 1s;
+            @include _transition();
             p{
                 color:white;
-                font-family: OpenBold;
-                font-size: 13px;
+                font-family: "Openbold";
+                font-size:$basic-font-size;
             }
         }
         .selectedsimpletab,.simpletab:hover{
             opacity: 1;
             
-            transition:all ease 1s;
+            @include _transition();
         }
     }
 }

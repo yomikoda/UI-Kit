@@ -14,11 +14,11 @@
         height: 38px;
         width: 38px;
         box-sizing: border-box;
-        border: 1px solid white;
+        @include _border();
         text-align: center;
         line-height: 38px;
         color: white;
-        font-family: OpenBold;
+        font-family: "Openbold";
         border-radius: 5px;
         position: relative;
         &:first-child:after,

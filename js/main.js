@@ -77,7 +77,8 @@ $(function () {
     // Show clip duration
     wavesurfer.on('ready', function () {
 
-                wavesurfer.playPause();
+//                wavesurfer.playPause();
+       
 
         $('#timewave').click(function () {
             wavesurfer.playPause();
@@ -253,11 +254,13 @@ $(function () {
     /** TABS **/
 
     $('.tab').click(function () {
+        $('.tab').removeClass('clicked-tab');
         $(this).toggleClass('clicked-tab');
 
     });
 
     $('.simpletab').click(function () {
+        $('.simpletab').removeClass('selectedsimpletab');
         $(this).toggleClass('selectedsimpletab');
 
     });
@@ -565,5 +568,20 @@ $(function () {
     });
     chart.render();
 
+    
+    
+    /** ANIMATIONS ? **/
+    
 
+    
+ $('#bubbles p:first-child').animate({height:"30px",width:"45px",opacity: 1}, 500, function() {
+  $('#bubbles p:nth-child(2)').animate({ height:"45px",width:"135px",opacity: 1}, 1000, function() {
+      $('#bubbles p:nth-child(3)').animate({ height:"30px",width:"150px",opacity: 1}, 1500,function(){
+          $('#bubbles p:last-child').animate({height:"45",width:"135px",opacity: 1}, 2000);
+      });
+   });
+});   
+    
+    
+    
 });

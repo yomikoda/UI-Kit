@@ -5,8 +5,8 @@
     margin-top:15px;
     margin-bottom: 20px;
     ul{
-        height:100%;
-        width:100%;
+        height:$full;
+        width:$full;
         @include border-radius(5px, 5px);
         @include _border();
         background-color:#26b8f0;
@@ -17,7 +17,7 @@
             color: $white;
             font-family: "OpenBold";
             font-size: $basic-font-size;
-            transition: $transition;
+            @include _transition();
             border-bottom: 1px solid white;
             box-sizing: border-box;
             cursor:pointer;

@@ -94,19 +94,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   font-style: normal;
 }
-/** TRANSITION **/
 /* line 1, ../scss/components/_buttons.scss */
 #btn-L, #btn-M {
   height: 35px;
   width: 100%;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid white;
   background-color: transparent;
   -moz-border-radius: 5px / 5px;
   -webkit-border-radius: 5px 5px;
   border-radius: 5px / 5px;
   font-family: "OpenBold";
-  font-size: 12px;
+  font-size: 13px;
   transition: all ease 1s;
 }
 /* line 11, ../scss/components/_buttons.scss */
@@ -252,7 +251,7 @@ label + input[type="checkbox"] + label {
   text-align: center;
   line-height: 25px;
   font-family: "OpenBold";
-  font-size: 12px;
+  font-size: 13px;
   color: #fff;
 }
 /* line 23, ../scss/components/_numbers.scss */
@@ -285,7 +284,7 @@ label + input[type="checkbox"] + label {
   padding-left: 15px;
   color: #fff;
   font-family: "OpenBold";
-  font-size: 12px;
+  font-size: 13px;
   transition: all ease 1s;
   border-bottom: 1px solid white;
   box-sizing: border-box;
@@ -512,8 +511,8 @@ label + input[type="checkbox"] + label {
   border-radius: 5px;
   line-height: 40px;
   text-align: center;
-  font-family: OpenBold;
-  font-size: 12px;
+  font-family: "Openbold";
+  font-size: 13px;
   color: white;
   float: left;
   background-color: rgba(255, 255, 255, 0.2);
@@ -536,7 +535,7 @@ label + input[type="checkbox"] + label {
   color: #00aced;
   background-color: white;
   padding-left: 5%;
-  font-family: OpenBold;
+  font-family: "Openbold";
   font-size: 13px;
 }
 /* line 41, ../scss/components/_messages.scss */
@@ -598,21 +597,27 @@ label + input[type="checkbox"] + label {
 #avatars .avatar {
   height: 74px;
   width: 74px;
-  background: url(/img/avatar.svg) center no-repeat;
+  background: url(/img/avatar-L.svg) center no-repeat;
   background-size: contain;
 }
 /* line 12, ../scss/components/_avatars.scss */
 #avatars .avatar:nth-child(2) {
   height: 56px;
   width: 56px;
+  background: url(/img/avatar-M.svg) center no-repeat;
+  background-size: contain;
 }
-/* line 16, ../scss/components/_avatars.scss */
+/* line 19, ../scss/components/_avatars.scss */
 #avatars .avatar:nth-child(3) {
   height: 37px;
   width: 37px;
+  background: url(/img/avatar-S.svg) center no-repeat;
+  background-size: contain;
 }
-/* line 20, ../scss/components/_avatars.scss */
+/* line 26, ../scss/components/_avatars.scss */
 #avatars .avatar:last-child {
+  background: url(/img/avatar-XS.svg) center no-repeat;
+  background-size: contain;
   height: 30px;
   width: 30px;
 }
@@ -638,9 +643,9 @@ label + input[type="checkbox"] + label {
 }
 /* line 16, ../scss/components/_upload.scss */
 #upload #uploadicon + p {
-  font-family: OpenBold;
+  font-family: "Openbold";
   color: white;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* line 1, ../scss/components/_levels.scss */
@@ -819,10 +824,10 @@ label + input[type="checkbox"] + label {
 }
 /* line 8, ../scss/components/_ariane.scss */
 #ariane a {
-  font-family: OpenBold;
+  font-family: "Openbold";
   display: block;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   position: relative;
   width: 28%;
   text-decoration: underline;
@@ -856,7 +861,7 @@ label + input[type="checkbox"] + label {
   padding-left: 20%;
   height: 50%;
   float: left;
-  font-family: OpenBold;
+  font-family: "Openbold";
   color: white;
   font-size: 11.5px;
 }
@@ -920,7 +925,7 @@ label + input[type="checkbox"] + label {
   text-align: center;
   line-height: 38px;
   color: white;
-  font-family: OpenBold;
+  font-family: "Openbold";
   border-radius: 5px;
   position: relative;
 }
@@ -970,18 +975,19 @@ label + input[type="checkbox"] + label {
   border: 1px solid white;
   position: absolute;
   background-color: #00aced;
+  left: 50%;
 }
 /* line 30, ../scss/components/_slider.scss */
 #slider #slides .slide:first-child {
   bottom: 0;
   z-index: 300;
   opacity: 1;
+  margin-left: -50%;
 }
-/* line 40, ../scss/components/_slider.scss */
+/* line 41, ../scss/components/_slider.scss */
 #slider #slides .slide:nth-child(2) {
   bottom: 3px;
   width: 95%;
-  left: 50%;
   margin-left: -47.5%;
   z-index: 250;
   opacity: 0.8;
@@ -990,42 +996,39 @@ label + input[type="checkbox"] + label {
 #slider #slides .slide:nth-child(3) {
   bottom: 6px;
   width: 90%;
-  left: 50%;
   margin-left: -45%;
   z-index: 200;
   opacity: 0.6;
 }
-/* line 56, ../scss/components/_slider.scss */
+/* line 55, ../scss/components/_slider.scss */
 #slider #slides .slide:nth-child(4) {
   bottom: 9px;
   width: 85%;
-  left: 50%;
   margin-left: -42.5%;
   z-index: 150;
   opacity: 0.4;
 }
-/* line 64, ../scss/components/_slider.scss */
+/* line 62, ../scss/components/_slider.scss */
 #slider #slides .slide:last-child {
   bottom: 12px;
   width: 80%;
-  left: 50%;
   margin-left: -40%;
   opacity: 0.2;
   z-index: 100;
 }
-/* line 74, ../scss/components/_slider.scss */
+/* line 71, ../scss/components/_slider.scss */
 #slider #buttons-slider {
   width: 50px;
   height: 4px;
   margin: 0 auto;
 }
-/* line 78, ../scss/components/_slider.scss */
+/* line 75, ../scss/components/_slider.scss */
 #slider #buttons-slider ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 82, ../scss/components/_slider.scss */
+/* line 79, ../scss/components/_slider.scss */
 #slider #buttons-slider ul .button {
   box-sizing: border-box;
   height: 4px;
@@ -1035,35 +1038,10 @@ label + input[type="checkbox"] + label {
   cursor: pointer;
   transition: all ease 1s;
 }
-/* line 90, ../scss/components/_slider.scss */
+/* line 87, ../scss/components/_slider.scss */
 #slider #buttons-slider ul .button:hover {
   background-color: white;
   transition: all ease 1s;
-}
-
-/* line 1, ../scss/components/_graph.scss */
-#graph {
-  height: 90px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-/* line 6, ../scss/components/_graph.scss */
-#graph #chartparent {
-  position: absolute;
-  height: 90px;
-  overflow: hidden;
-  left: -35px;
-  font-family: openbold;
-}
-/* line 11, ../scss/components/_graph.scss */
-#graph #chartparent #chartContainer {
-  height: 100px;
-  width: 282px;
-}
-/* line 16, ../scss/components/_graph.scss */
-#graph #chartparent .canvasjs-chart-credit {
-  display: none;
 }
 
 /* line 1, ../scss/components/_audio.scss */
@@ -1083,6 +1061,31 @@ label + input[type="checkbox"] + label {
   font-family: Open-semibold;
   color: white;
   font-size: 11.5px;
+}
+
+/* line 1, ../scss/components/_graph.scss */
+#graph {
+  height: 90px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 6, ../scss/components/_graph.scss */
+#graph #chartparent {
+  position: absolute;
+  height: 90px;
+  overflow: hidden;
+  left: -35px;
+  font-family: "Openbold";
+}
+/* line 11, ../scss/components/_graph.scss */
+#graph #chartparent #chartContainer {
+  height: 100px;
+  width: 282px;
+}
+/* line 16, ../scss/components/_graph.scss */
+#graph #chartparent .canvasjs-chart-credit {
+  display: none;
 }
 
 /* line 1, ../scss/components/_input.scss */
@@ -1311,7 +1314,7 @@ label + input[type="checkbox"] + label {
 }
 /* line 36, ../scss/components/_weather.scss */
 #weather #weatherforecast .weatherday p {
-  font-family: Openbold;
+  font-family: "Openbold";
   margin-top: 5px;
 }
 
@@ -1371,7 +1374,7 @@ label + input[type="checkbox"] + label {
   width: 70px;
   height: 70px;
   position: relative;
-  font-family: Openbold;
+  font-family: "Openbold";
   font-size: 18px;
 }
 
@@ -1469,18 +1472,20 @@ label + input[type="checkbox"] + label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: Openbold;
+  font-family: "Openbold";
   font-size: 13px;
   color: white;
+  margin-bottom: 10px;
+  padding: 0 7px;
 }
-/* line 82, ../scss/components/_rangelevels.scss */
+/* line 84, ../scss/components/_rangelevels.scss */
 #rangelevels ul li {
   width: 15px;
   text-align: center;
   cursor: pointer;
   opacity: 0.5;
 }
-/* line 88, ../scss/components/_rangelevels.scss */
+/* line 90, ../scss/components/_rangelevels.scss */
 #rangelevels ul .rangevalue {
   opacity: 1;
 }
@@ -1507,7 +1512,7 @@ label + input[type="checkbox"] + label {
   line-height: 40px;
   text-align: center;
   color: white;
-  font-family: OpenBold;
+  font-family: "Openbold";
   font-size: 13px;
 }
 /* line 21, ../scss/components/_tabs.scss */
@@ -1541,7 +1546,7 @@ label + input[type="checkbox"] + label {
 /* line 46, ../scss/components/_tabs.scss */
 #tabs #tabmenu2 .simpletab p {
   color: white;
-  font-family: OpenBold;
+  font-family: "Openbold";
   font-size: 13px;
 }
 /* line 52, ../scss/components/_tabs.scss */
@@ -1561,7 +1566,7 @@ label + input[type="checkbox"] + label {
 #player #audioplayer {
   width: 100%;
   height: 40px;
-  border: solid 1px white;
+  border: 1px solid white;
   background: rgba(255, 255, 255, 0.2);
 }
 /* line 14, ../scss/components/_player.scss */
@@ -1605,7 +1610,7 @@ label + input[type="checkbox"] + label {
 #player #trackduration {
   position: absolute;
   color: white;
-  font-family: OpenBold;
+  font-family: "Openbold";
   font-size: 11px;
   right: 5px;
   bottom: 3px;
@@ -1757,6 +1762,12 @@ label + input[type="checkbox"] + label {
   padding-top: 5px;
   padding-left: 10px;
 }
+/* line 78, ../scss/components/_bubbles.scss */
+#bubbles p:first-child, #bubbles p:nth-child(2), #bubbles p:nth-child(3), #bubbles p:last-child {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+}
 
 /* line 1, ../scss/components/_diagram.scss */
 #diagram {
@@ -1783,148 +1794,100 @@ label + input[type="checkbox"] + label {
   display: none;
 }
 
-/* line 39, ../scss/templates/_index.scss */
+/* line 40, ../scss/templates/_index.scss */
 body {
   width: 100%;
   height: 100%;
   background-color: #00aced;
 }
-/* line 43, ../scss/templates/_index.scss */
+/* line 44, ../scss/templates/_index.scss */
 body main {
   width: 1024px;
   height: auto;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 20px;
 }
-/* line 48, ../scss/templates/_index.scss */
+/* line 49, ../scss/templates/_index.scss */
 body main #logo {
   width: 190px;
   height: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
   background-size: contain;
 }
-/* line 55, ../scss/templates/_index.scss */
+/* line 56, ../scss/templates/_index.scss */
 body main #columns {
   display: flex;
   justify-content: space-between;
 }
-/* line 58, ../scss/templates/_index.scss */
+/* line 59, ../scss/templates/_index.scss */
 body main #columns .colpair {
   height: 980px;
   width: 49%;
   display: flex;
   justify-content: space-between;
 }
-/* line 64, ../scss/templates/_index.scss */
+/* line 65, ../scss/templates/_index.scss */
 body main #columns .colpair .col {
   width: 232px;
   height: auto;
 }
-/* line 67, ../scss/templates/_index.scss */
+/* line 68, ../scss/templates/_index.scss */
 body main #columns .colpair .col:last-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 72, ../scss/templates/_index.scss */
+/* line 73, ../scss/templates/_index.scss */
 body main #columns .colpair .col #buttons {
   width: 100%;
   height: 200px;
 }
 
-/* line 81, ../scss/templates/_index.scss */
+/* line 82, ../scss/templates/_index.scss */
 * {
   transition: all ease 1s;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 84, ../scss/templates/_index.scss */
-  body {
-    width: 100%;
-    height: 100%;
-    background-color: #00aced;
-  }
-  /* line 88, ../scss/templates/_index.scss */
+  /* line 87, ../scss/templates/_index.scss */
   body main {
     width: 80%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 120px;
   }
-  /* line 93, ../scss/templates/_index.scss */
+  /* line 89, ../scss/templates/_index.scss */
   body main #logo {
-    width: 190px;
-    height: 35px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-    background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
-    background-size: contain;
+    margin: 0 auto 35px;
   }
-  /* line 102, ../scss/templates/_index.scss */
+  /* line 92, ../scss/templates/_index.scss */
   body main #columns {
     width: 100%;
     display: block;
   }
-  /* line 105, ../scss/templates/_index.scss */
+  /* line 95, ../scss/templates/_index.scss */
   body main #columns .colpair {
     float: none;
-    height: 980px;
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
-  /* line 111, ../scss/templates/_index.scss */
+  /* line 101, ../scss/templates/_index.scss */
   body main #columns .colpair + .colpair {
     margin-top: 35px;
   }
-  /* line 114, ../scss/templates/_index.scss */
+  /* line 104, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 118, ../scss/templates/_index.scss */
-  body main #columns .colpair .col #buttons {
-    width: 100%;
-    height: 200px;
-  }
 
-  /* line 128, ../scss/templates/_index.scss */
+  /* line 115, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 136, ../scss/templates/_index.scss */
-  body {
-    width: 100%;
-    height: 100%;
-    background-color: #00aced;
-  }
-  /* line 140, ../scss/templates/_index.scss */
-  body main {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 120px;
-  }
-  /* line 145, ../scss/templates/_index.scss */
-  body main #logo {
-    width: 190px;
-    height: 35px;
-    background: url(/img/Mobile_UI_Blueprint_1.3.png) left no-repeat;
-    background-size: contain;
-    margin: 0 auto;
-    margin-bottom: 35px;
-  }
-  /* line 155, ../scss/templates/_index.scss */
-  body main #columns {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  /* line 159, ../scss/templates/_index.scss */
+  /* line 127, ../scss/templates/_index.scss */
   body main #columns .colpair {
     margin: 0 auto;
     float: none;
@@ -1934,19 +1897,14 @@ body main #columns .colpair .col #buttons {
     flex-direction: column;
     justify-content: space-between;
   }
-  /* line 167, ../scss/templates/_index.scss */
+  /* line 135, ../scss/templates/_index.scss */
   body main #columns .colpair .col {
     width: 232px;
     min-width: 232px;
     height: auto;
   }
-  /* line 171, ../scss/templates/_index.scss */
-  body main #columns .colpair .col #buttons {
-    width: 100%;
-    height: 200px;
-  }
 
-  /* line 181, ../scss/templates/_index.scss */
+  /* line 146, ../scss/templates/_index.scss */
   * {
     transition: all ease 1s;
   }

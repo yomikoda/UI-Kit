@@ -1,13 +1,13 @@
 #btn-L {
     height: 35px;
-    width: 100%;
+    width: $full;
     color: $white;
-    border: 1px solid $white;
+    @include _border();
     background-color: rgba(0, 0, 0, 0);
     @include border-radius(5px, 5px);
     font-family: "OpenBold";
     font-size: $basic-font-size;
-    transition: $transition;
+    @include _transition();
     &:hover{
         @include _btn_hover();
         cursor:pointer;

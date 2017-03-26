@@ -1,7 +1,7 @@
 #weather {
-    width: 100%;
+    width: $full;
     color: white;
-    font-size: 13px;
+    font-size:$basic-font-size;
     margin-bottom: 20px;
     p:first-child {
         font-family: Open-Semibold;
@@ -12,7 +12,7 @@
         }
     }
     #weatherforecast {
-        width: 100%;
+        width: $full;
         height: 70px;
         display: flex;
         text-align: center;
@@ -20,7 +20,7 @@
         border-left: 1px solid white;
         .weatherday {
             width: 25%;
-            height: 100%;
+            height: $full;
             box-sizing: border-box;
             border-right: 1px solid white;
             .weathericon {
@@ -34,7 +34,7 @@
                     background:url(/img/weather_storm.svg) center no-repeat;
                 }
             p {
-                font-family: Openbold;
+                font-family: "Openbold";
                 margin-top: 5px;
             }
         }

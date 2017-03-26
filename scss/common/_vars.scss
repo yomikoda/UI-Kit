@@ -4,6 +4,8 @@ $bluebg : #00aced;
 $lightblue:#40c1f2;
 $white : #fff;
 $lightgrey:#d9d9d9;
+$half-white: rgba(255,255,255,0.5);
+$quart-white: rgba(255,255,255,0.2);
 
 /** SIZE **/
 $full : 100%;
@@ -19,9 +21,7 @@ $quart : 25%;
 @include font-face("Open-Semibold", font-files("../fonts/OpenSans-Semibold.ttf"), "../fonts/OpenSans-Semibold.eot",bold,normal);
 @include font-face("Open-light", font-files("../fonts/OpenSans-Light.ttf"), "../fonts/OpenSans-Light.eot",bold,normal); 
 
-$basic-font-size : 12px;
+$basic-font-size : 13px;
 
 
-/** TRANSITION **/
 
-$transition: all ease 1s;

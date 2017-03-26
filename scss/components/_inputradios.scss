@@ -28,7 +28,7 @@
       position: absolute;
       left:0; top: 0px;
       width: 24px; height: 24px; 
-      border: 1px solid white;
+      @include _border();
       box-sizing: border-box;
       border-radius: 3px; 
     }
@@ -37,7 +37,7 @@
       position: absolute;
       left:0; top: 0px;
       width: 24px; height: 24px; 
-      border: 1px solid white;
+      @include _border();
       box-sizing: border-box;
       border-radius: 12px; 
         

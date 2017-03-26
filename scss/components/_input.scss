@@ -7,13 +7,13 @@
         border: none;
         padding: none;
         background-color: rgba(255, 255, 255, 0);
-        border: 1px solid white;
+        @include _border();
         border-radius: 5px;
-        width: 100%;
+        width: $full;
         box-sizing: border-box;
         margin-bottom: 15px;
         font-family: Open-Regular;
-        font-size: 13px;
+        font-size:$basic-font-size;
     }
     input {
         height: 40px;

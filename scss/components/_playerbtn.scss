@@ -1,9 +1,9 @@
 #playerbtns {
     height: 40px;
-    width: 100%;
+    width: $full;
     margin-bottom: 15px;
     #audiobtns {
-        width:100%;
+        width:$full;
         height:40px;
         display: flex;
         flex-direction: row;
@@ -12,7 +12,7 @@
             height: 40px;
             width: 40px;
             box-sizing: border-box;
-            border:1px solid white;
+            @include _border();
             border-radius: 20px;
             cursor: pointer;
             
@@ -34,7 +34,7 @@
             background:url(/img/playerbtn/loop-btn.svg) no-repeat center;
         }
         #playbtn:hover,#pausebtn:hover,#removebtn:hover,#infobtn:hover,#loopbtn:hover{
-                background-color:rgba(255,255,255,0.2);
+                background-color:$quart-white;
             }
         
         

@@ -2,10 +2,10 @@
     margin-bottom: 20px;
     input {
         border: none;
-        width: 100%;
+        width: $full;
         padding-left: 5%;
         height: 35px;
-        border: 1px solid white;
+        @include _border();
         background-color: rgba(0, 0, 0, 0);
         color: white;
         box-sizing: border-box;
@@ -26,10 +26,10 @@
             color: red;
             opacity: 0.5;
             font-family: Open-Semibold;
-            font-size: 13px;
+            font-size:$basic-font-size;
         }
         &::placeholder{
-            color:rgba(255,255,255,0.5);
+            color:$half-white
         }
     }
 }

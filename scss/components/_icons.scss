@@ -1,11 +1,11 @@
 #icons{
     clear: both;
     height:50px;
-    width:100%;
+    width:$full;
     margin-top: 20px;
-        margin-bottom: 20px;
+    margin-bottom: 20px;
     #randomicons{
-        height:100%;
+        height:$full;
         width:110px;
         float:left;
         div{
@@ -37,12 +37,12 @@
             background-size: contain;
             &:nth-child(9),&:last-child{
                 background:url(/img/icons/heart-empty.svg) no-repeat center;
-                transition:all ease 1s;
+                @include _transition();
                  background-size: contain;
             }  
              &:nth-child(9):hover,&:last-child:hover{
                 background:url(/img/icons/heart-full.svg) no-repeat center;
-                transition:all ease 1s;
+                @include _transition();
                   background-size: contain;
                  
             }
@@ -54,11 +54,11 @@
             margin-bottom: 8px;
              &:nth-child(4),&:nth-child(5){
                 background:url(/img/icons/star-empty.svg) no-repeat center;
-                transition:all ease 1s;
+                @include _transition();
             }  
              &:nth-child(4):hover,,&:nth-child(5):hover{
                 background:url(/img/icons/star-full.svg) no-repeat center;
-                transition:all ease 1s;
+                @include _transition();
             }
         }
         

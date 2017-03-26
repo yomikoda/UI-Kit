@@ -1,13 +1,13 @@
 #player {
-    width: 100%;
+    width: $full;
     height: 40px;
     margin-bottom: 20px;
     position: relative;
     
     #audioplayer {
-        width: 100%;
+        width: $full;
         height: 40px;
-        border: solid 1px white;
+        @include _border();;
         background: rgba(255, 255, 255, 0.2);
        
     }
@@ -16,7 +16,7 @@
         width: 20px;
         margin:10px;
         border: none;
-        background-size: 50% 50%;
+        background-size: $mid $mid;
         background-repeat: no-repeat;
         background-position: center;
         float: left;
@@ -46,7 +46,7 @@
     #trackduration{
         position: absolute;
         color:white;
-        font-family: OpenBold;
+        font-family: "Openbold";
         font-size: 11px;
         right:5px;
         bottom:3px;

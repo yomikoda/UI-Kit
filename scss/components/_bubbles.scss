@@ -1,13 +1,13 @@
 #bubbles {
     height: 200px;
-    width: 100%;
+    width: $full;
   
     p {
         background-color: white;
         color: $bluebg;
         border-radius: 10px;
         font-family: Open-semibold;
-        font-size: 13px;
+        font-size:$basic-font-size;
         clear: both;
         margin-bottom: 10px;
         position: relative;
@@ -74,5 +74,10 @@
         text-align: left;
         padding-top: 5px;
         padding-left: 10px;
+    }
+    p:first-child,p:nth-child(2),p:nth-child(3),p:last-child{
+        opacity:0;
+        height:0px;
+        width:0px;
     }
 }

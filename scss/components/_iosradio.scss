@@ -29,13 +29,13 @@ input[type="checkbox"].ios8-switch {
         &:before{
             @include _beforeiosradio();  
             background-color:$bluebg;
-            border:1px solid white;
+            @include _border();
         }
         &:after{
             @include _beforeiosradio();
             width: 24px; 
             height: 24px; 
-            border:1px solid white;
+            @include _border();
         }
         &:hover:after{
             box-shadow: 0 0 5px rgba(0,0,0,0.3);

@@ -1,7 +1,7 @@
 #titles{
     font-family: Opensans-bold;
     color:white;
-    font-size: 13px;
+    font-size:$basic-font-size;
     height:195px;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     margin-bottom: 15px;
     h1,h2,h3,h4,h5,h6{
         display: block;
-        width:100%;
+        width:$full;
     }
     h1{
         font-size: 1.75em;

@@ -1,12 +1,12 @@
 #ariane {
     margin-bottom: 15px;
     height: 15px;
-    width: 100%;
+    width: $full;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     a {
-        font-family: OpenBold;
+        font-family: "Openbold";
         display: block;
         color: white;
         font-size: $basic-font-size;

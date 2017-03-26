@@ -1,6 +1,6 @@
 #graph {
     height:90px;
-    width:100%;
+    width:$full;
     position: relative;
     overflow: hidden;
     #chartparent{
@@ -12,7 +12,7 @@
        height:100px;
         width:282px;
     }
-    font-family: openbold;
+    font-family: "Openbold";
     .canvasjs-chart-credit{
         display: none;
     }

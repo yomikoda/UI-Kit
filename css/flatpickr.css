@@ -18,7 +18,7 @@
     font-size: 13px;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.2);
-    border:1px solid white;
+    @include _border();
     margin-top: 15px;
 }
 

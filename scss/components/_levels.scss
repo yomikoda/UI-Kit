@@ -1,16 +1,16 @@
 #levels{
     height:85px;
-    width:100%;
+    width:$full;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 18px;
     .level{
         height:2px;
-        width:100%;
+        width:$full;
         background-color:rgba(255,255,255,0.25);
         .levelfill{
-            width:100%;
+            width:$full;
             height:2px;
             background-color:white;
         
@@ -19,7 +19,7 @@
             width:25%;
         }
         &:nth-child(2)>.levelfill{
-            width:50%;
+            width:$mid;
         }
         &:nth-child(3)>.levelfill{
             width:75%;
@@ -33,7 +33,7 @@
             justify-content: space-between;
             & .levelfill{
                 width:24%;
-                background-color:rgba(255,255,255,0.2);
+                background-color:$quart-white;
                 &:first-child{
                    background-color:rgba(255,255,255,1); 
                 }
