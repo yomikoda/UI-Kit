@@ -1,0 +1,42 @@
+#weather {
+    width: $full;
+    color: white;
+    font-size:$basic-font-size;
+    margin-bottom: 20px;
+    p:first-child {
+        font-family: Open-Semibold;
+        margin-bottom: 8px;
+        &+p {
+            font-family: Open-light;
+            margin-bottom: 15px;
+        }
+    }
+    #weatherforecast {
+        width: $full;
+        height: 70px;
+        display: flex;
+        text-align: center;
+        box-sizing: border-box;
+        border-left: 1px solid white;
+        .weatherday {
+            width: 25%;
+            height: $full;
+            box-sizing: border-box;
+            border-right: 1px solid white;
+            .weathericon {
+                height: 30px;
+                width: 30px;
+                margin: 0 auto;
+                margin-top: 15px;
+                background: url(/img/weather_cloud.svg) center no-repeat;
+            }
+            &:nth-child(3)>.weathericon{
+                    background:url(/img/weather_storm.svg) center no-repeat;
+                }
+            p {
+                font-family: "Openbold";
+                margin-top: 5px;
+            }
+        }
+    }
+}

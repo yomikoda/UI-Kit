@@ -1,0 +1,83 @@
+#bubbles {
+    height: 200px;
+    width: $full;
+  
+    p {
+        background-color: white;
+        color: $bluebg;
+        border-radius: 10px;
+        font-family: Open-semibold;
+        font-size:$basic-font-size;
+        clear: both;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    p:first-child,
+    p:first-child+p {
+        float: left;
+    }
+    p:first-child:before,
+    p:first-child+p:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left:  -3px;
+        bottom: -4px;
+        width: 10px;
+        height: 10px;
+        background: url(/img/message-tail-left.svg) no-repeat;
+         background-size: contain;
+        background-position: center;
+    }
+    p:nth-child(3):before,
+    p:last-child:before {
+        content: "";
+        position: absolute;
+        display: block;
+        right: -3px;
+        bottom: -4px;
+        width: 10px;
+        height: 10px;
+        background: url(/img/message-tail-right.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    p:nth-child(3),
+    p:last-child {
+        float: right;
+    }
+    p:first-child {
+        height: 30px;
+        width: 45px;
+        text-align: left;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+    p:nth-child(2) {
+        height: 45px;
+        width: 135px;
+        padding-top: 5px;
+        line-height: 20px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    p:nth-child(3) {
+        height: 30px;
+        width: 150px;
+        line-height: 30px;
+        text-align: center;
+    }
+    p:last-child {
+        height: 45px;
+        width: 135px;
+        line-height: 20px;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    p:first-child,p:nth-child(2),p:nth-child(3),p:last-child{
+        opacity:0;
+        height:0px;
+        width:0px;
+    }
+}

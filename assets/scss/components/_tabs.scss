@@ -1,0 +1,58 @@
+#tabs{
+    height:75px;
+    width:$full;
+    margin-bottom: 15px;
+    #tabmenu{
+        width:$full;
+        height:40px;
+        border-radius: 5px;
+        @include _border();
+        margin-bottom: 15px;
+        .tab{
+            float: left;
+            width:33.3%;
+            height:40px;
+            line-height: 40px;
+            text-align: center;
+            color:white;
+            font-family: "Openbold";
+            font-size:$basic-font-size;
+            
+            &:nth-child(2){
+                border-left:1px solid white;
+                border-right: 1px solid white;
+                box-sizing: border-box;
+            }
+        }
+        
+            .tab:hover,.clicked-tab{
+                cursor:pointer;
+                background-color:$quart-white
+            }
+    }
+    #tabmenu2{
+        height:20px;
+        width:$full;
+        display: flex;
+        justify-content: space-between;
+        .simpletab{
+            width:24%;
+            box-sizing: border-box;
+            border-bottom: 2px solid white;
+            text-align: center;
+            opacity: 0.5;
+            cursor: pointer;
+            @include _transition();
+            p{
+                color:white;
+                font-family: "Openbold";
+                font-size:$basic-font-size;
+            }
+        }
+        .selectedsimpletab,.simpletab:hover{
+            opacity: 1;
+            
+            @include _transition();
+        }
+    }
+}

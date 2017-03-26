@@ -1,0 +1,48 @@
+#timeandstats{
+    
+    margin-bottom: 20px;
+}
+
+#time {
+    width: 125px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+    p {
+        height: 38px;
+        width: 38px;
+        box-sizing: border-box;
+        @include _border();
+        text-align: center;
+        line-height: 38px;
+        color: white;
+        font-family: "Openbold";
+        border-radius: 5px;
+        position: relative;
+        &:first-child:after,
+        &:nth-child(2):after {
+            content: ":";
+            position: absolute;
+            display: block;
+            left: 98%;
+            top: 0;
+            width: 10px;
+            height: 15px;
+            font-family: Open-SemiBold;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            width: 38px;
+            height: 19px;
+            border-bottom: 1px solid rgba(255,255,255,0.4);
+            
+            font-family: Open-SemiBold;
+        }
+    }
+}

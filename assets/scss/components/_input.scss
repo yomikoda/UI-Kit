@@ -1,0 +1,41 @@
+#input {
+    margin-bottom: 15px;
+    height:250px;
+    input,
+    textarea {
+        text-decoration: none;
+        border: none;
+        padding: none;
+        background-color: rgba(255, 255, 255, 0);
+        @include _border();
+        border-radius: 5px;
+        width: $full;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        font-family: Open-Regular;
+        font-size:$basic-font-size;
+    }
+    input {
+        height: 40px;
+        padding-left: 5%;
+        color: white;
+        &::placeholder {
+            color: white;
+        }
+        &:first-child::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        &+input {
+            position: relative;
+        }
+    }
+    textarea {
+        height: 140px;
+        padding: 0 5%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        resize: none;
+        color: white;
+    }
+}
+

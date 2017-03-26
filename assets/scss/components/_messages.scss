@@ -1,0 +1,49 @@
+#messages{
+    height:100px;
+    width:$full;
+    margin-bottom: 15px;
+    #hello{
+        height:40px;
+        width:$full;
+        margin-bottom: 20px;
+        .hellothere{
+            width:110px;
+            height:40px;
+            box-sizing: border-box;
+            @include _border();
+            border-radius: 5px;
+            line-height: 40px;
+            text-align: center;
+            font-family: "Openbold";
+            font-size: $basic-font-size ;
+            color:white;
+            float: left;
+            background-color:$quart-white;
+            &:first-child{
+                margin-right: 12px;
+            }
+        }
+    }
+    #error{
+        height:40px;
+        width:$full;
+        position: relative;
+        p{
+            height:40px;
+            width:95%;
+            line-height: 40px;
+            color:$bluebg;
+            background-color:white;
+            padding-left: 5%;
+            font-family: "Openbold";
+            font-size: 13px ;
+        }
+        img{
+            display: block;
+            position: absolute;
+            right:10px;
+            top:$mid;
+            margin-top:-6px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+#avatars{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    .avatar{
+        height:74px;
+        width:74px;
+        background:url(/img/avatar-L.svg) center no-repeat;
+        background-size: contain;
+        &:nth-child(2){
+            height:56px;
+            width:56px;
+            
+        background:url(/img/avatar-M.svg) center no-repeat;
+        background-size: contain;
+        }
+        &:nth-child(3){
+            height:37px;
+            width:37px;
+            
+        background:url(/img/avatar-S.svg) center no-repeat;
+        background-size: contain;
+        }
+        &:last-child{
+            
+        background:url(/img/avatar-XS.svg) center no-repeat;
+        background-size: contain;
+            height:30px;
+            width:30px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+#circlestats {
+    height: 75px;
+    width: $full;
+    display: flex;
+    justify-content: space-between;
+   
+    
+    #container00,#container01,#container02 {
+
+        width: 70px;
+        height: 70px;
+        position: relative;
+        
+        font-family: "Openbold";
+        font-size:18px;
+    }
+}

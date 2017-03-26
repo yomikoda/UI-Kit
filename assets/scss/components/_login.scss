@@ -1,0 +1,35 @@
+#login {
+    margin-bottom: 20px;
+    input {
+        border: none;
+        width: $full;
+        padding-left: 5%;
+        height: 35px;
+        @include _border();
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        box-sizing: border-box;
+        &:first-child {
+            border-bottom: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        &:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder {
+            color: red;
+            opacity: 0.5;
+            font-family: Open-Semibold;
+            font-size:$basic-font-size;
+        }
+        &::placeholder{
+            color:$half-white
+        }
+    }
+}

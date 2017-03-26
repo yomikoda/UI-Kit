@@ -1,0 +1,23 @@
+{
+  "name": "node-express",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Node Express",
+  "keywords": [],
+  "dependencies": {
+    "express": "~4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yomikoda/UI-Kit.git"
+  },
+  "author": "Yomikoda <yomikoda@gmail.com>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/yomikoda/UI-Kit"
+  },
+  "homepage": "https://github.com/yomikoda/UI-Kit#readme"
+}
