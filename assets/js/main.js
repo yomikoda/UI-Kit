@@ -386,9 +386,13 @@ $(function () {
         return min + ':' + sec;
     };
 
-
-    $('#trackduration').text(readableDuration(duration));
-
+    
+    console.log(duration);
+    $('#trackduration').text(readableDuration(duration)); 
+    
+    //WORKED BEFORE, BUT NOW IT WON'T -_-
+    
+    $('#trackduration').text("01:45");
 
 
 
