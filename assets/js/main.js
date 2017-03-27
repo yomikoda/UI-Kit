@@ -77,11 +77,14 @@ $(function () {
     // Show clip duration
     wavesurfer.on('ready', function () {
 
-//                wavesurfer.playPause();
+                wavesurfer.playPause();
+        wavesurfer.setMute(true); // MUTE THE AUDIO
        
 
         $('#timewave').click(function () {
             wavesurfer.playPause();
+            
+            
         });
     });
 

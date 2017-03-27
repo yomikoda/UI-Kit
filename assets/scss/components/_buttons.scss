@@ -43,11 +43,11 @@ select {
     appearance:none;
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
-    background: url(/img/arrow.png) no-repeat 90% ;
+    background: url(/img/arrow.svg) no-repeat 90% ;
     &.clickedselect{
       background-color: $white;
       color:$bluebg;
-      background-image: url(/img/arrow-blue.png);
+      background-image: url(/img/arrow-blue.svg);
     } 
     
 }

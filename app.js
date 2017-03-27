@@ -8,7 +8,7 @@ app.use('/img', express.static('assets/img'));
 app.use('/fonts', express.static('assets/fonts'));
 
 
-app.get('/', function(req, res){
+app.get('/UI-KIT', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 

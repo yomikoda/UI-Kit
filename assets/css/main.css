@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -150,13 +150,13 @@ select {
   /* Firefox */
   -webkit-appearance: none;
   /* Safari and Chrome */
-  background: url(/img/arrow.png) no-repeat 90%;
+  background: url(/img/arrow.svg) no-repeat 90%;
 }
 /* line 47, ../scss/components/_buttons.scss */
 select.clickedselect {
   background-color: #fff;
   color: #00aced;
-  background-image: url(/img/arrow-blue.png);
+  background-image: url(/img/arrow-blue.svg);
 }
 
 /* line 18, ../scss/components/_iosradio.scss */
@@ -364,10 +364,10 @@ label + input[type="checkbox"] + label {
   height: 24px;
   width: 24px;
   content: '';
-  background: url(/img/checkmark.png) no-repeat;
+  background: url(/img/checkmark.svg) no-repeat;
   position: absolute;
   top: 5px;
-  left: 7px;
+  left: 5px;
   transition: all .2s;
 }
 /* line 60, ../scss/components/_inputradios.scss */
@@ -809,7 +809,7 @@ label + input[type="checkbox"] + label {
   top: 0px;
   right: 12px;
   transition: all .2s;
-  background: url(/img/arrow-blue.png) no-repeat;
+  background: url(/img/arrow-blue.svg) no-repeat;
   background-position: 10px 13px;
 }
 
@@ -842,7 +842,7 @@ label + input[type="checkbox"] + label {
   top: 0;
   width: 10px;
   height: 15px;
-  background: url(/img/next.png);
+  background: url(/img/next.svg);
 }
 /* line 27, ../scss/components/_ariane.scss */
 #ariane a:last-child {
@@ -1358,7 +1358,7 @@ label + input[type="checkbox"] + label {
   width: 18px;
   height: 18px;
   margin-top: -9px;
-  background: url(/img/tag-cross.png) no-repeat;
+  background: url(/img/tag-cross.svg) no-repeat;
   background-position: center;
 }
 
@@ -1583,11 +1583,11 @@ label + input[type="checkbox"] + label {
 }
 /* line 25, ../scss/components/_player.scss */
 #player .play {
-  background: url(/img/playerbtn/play-btn.png);
+  background: url(/img/playerbtn/play-btn.svg);
 }
 /* line 28, ../scss/components/_player.scss */
 #player .pause {
-  background: url(/img/playerbtn/pause-btn.png);
+  background: url(/img/playerbtn/pause-btn.svg);
 }
 /* line 31, ../scss/components/_player.scss */
 #player #timeline {
